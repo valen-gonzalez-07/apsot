@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/components/chequeoTabs.css">
+    <link rel="stylesheet" href="../css/components/chequeoInformacion.css">
+    <link rel="stylesheet" href="../css/globals/siteLateralNavigation.css">
+    <link rel="stylesheet" href="../css/globals/pageLoggedBreadcrumbs.css">
+    <link rel="stylesheet" href="../css/globals/siteFooter.css">
+    <link rel="stylesheet" href="../css/globals/siteNav.css">
+    <link rel="stylesheet" href="../css/globals/iconos.css">
+    <link rel="stylesheet" href="../css/globals/main.css">
+    <title>Document</title>
+</head>
+<body class="logged-in">
+
+    <h1 class="hidden">APSOT</h1>
+
+    <div id="wrapper">
+
+        <nav class="container site-nav">
+            <div class="row fullwidth center">
+                <div class="col-6 col-logo">
+                    <a href="#" class="logo image-box">
+                        <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                    </a>
+                    <a href="tel:08001222776" class="bttn-emergency hide-mobile">
+                        <i class="icon-emergency-outlined"></i>
+                        <span>0800 122 2776</span>
+                        <small>Emergencias</small>
+                    </a>
+                </div>
+                <div class="col-6 col-bttn">
+                    <!-- Buttons -->
+                    <a href="#" class="bttn-login" data-comp="openLogged"><i class="icon-user-outlined"></i></a>
+                    <a href="#" class="bttn-search" data-comp="openSearch"><i class="icon-search"></i></a>
+                    <a href="#" class="bttn-menu" data-comp="openMenu"><i class="icon-menu"></i></a>
+                    <!-- Buscador -->
+                    <div class="buscador" data-comp="buscador">
+                        <input type="text" name="" id="" placeholder="Buscar dentro de Apsot">
+                        <input type="submit" value="Buscar">
+                    </div>
+                    <!-- Logged --> 
+                    <div class="logged">
+                        <span class="name"><span class="hide-desktop">Hola </span>Pedro gomez</span>
+                        <ul>
+                            <li><a href="#">Mi perfil</a></li>
+                            <li>Cerrar sesión</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Lateral Menu --> 
+                <div class="lateral-menu" data-comp="lateralMenu">
+                    <div class="menu-box">
+                        <div class="header">
+                            <a href="#" class="logo hide-desktop">
+                                <img src="../img/layout/logo/logo-blue.svg" alt="APSOT">
+                            </a>
+                            <button class="close-menu" data-comp="closeMenu"><span class="hide-mobile">Cerrar</span> <i class="icon-close"></i></button>
+                            <a href="tel:08001222776" class="bttn-emergency">
+                                <i class="icon-emergency-outlined"></i>
+                                <span>0800 122 2776</span>
+                                <small>Emergencias</small>
+                            </a>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="menu">
+                                <li class="has-submenu">
+                                    <a href="#">Plan Corporativo APSOT <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Mi chequeo Médico</a></li>
+                                        <li><a href="#">Cartilla</a></li>
+                                        <li><a href="#">Reintegros</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Credencial Digital</a></li>
+                                        <li><a href="#">Llamando al doctor</a></li>
+                                        <li><a href="#">Token digital</a></li>
+                                        <li><a href="#">Asistencia al viajero</a></li>
+                                        <li><a href="#">Asistencia en localidades pequeñas</a></li>
+                                        <li><a href="#">Información al beneficiario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Prestadores <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Validacion de afiliados</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Quiero ser prestador</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Chequeos Médicos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Consultorios Apsot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cartilla</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Sobre Apsot <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Informacion institucional</a></li>
+                                        <li><a href="#">Beneficios APSOT</a></li>
+                                        <li><a href="#">Contenido Legal</a></li>
+                                        <li><a href="#">Codigo de conducta</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Novedades</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <p>Nuestras redes</p>
+                                <div class="links">
+                                    <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-outlined"></i></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-outlined"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-outlined"></i></a>
+                                    <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-outlined"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section class="container has-lateral-navigation page-logged-breadcrumbs">
+            <div class="row">
+                <div class="col-12 links-box">
+                    <span><a href="../index.html">Home</a></span>
+                    <span>Chequeos Médicos</span>
+                    <span><a href="informacionChequeo.html" class="active">Información de chequeos médicos</a></span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container has-lateral-navigation chequeo-tabs">
+            <div class="row">
+                <div class="col-12 tabs-box">
+                    <a href="chequeos.html" class="tab"><span>Reservá tu chequeo</span></a>
+                    <a href="#" class="tab"><span>Mis turnos</span></a>
+                    <a href="#" class="tab"><span>Preguntas frecuentes</span></a>
+                    <a href="informacionChequeo.html" class="tab active"><span>Información de Chequeos Médicos</span></a>
+                </div>
+            </div>
+        </section>
+
+        <main class="container has-lateral-navigation chequeo-informacion">
+
+            <div class="row center chequeo-pasos">
+                <section class="col-9 title-col">
+                    <h2>Pasos a seguir para reservar tu turno</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Volutpat neque viverra nunc arcu ultricies felis tincidunt sodales suspendisse.</p>
+                </section>
+                <section class="col-9 boxes-col">
+                    <div class="boxes">
+                        <div class="box">
+                            <figure class="image-box">
+                                <img src="../img/temporary/guardias.svg" alt="">
+                            </figure>
+                            <h4>Seleccioná el centro</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque sit tortor vitae faucibus morbi turpis.</p>
+                        </div>
+                        <div class="box">
+                            <figure class="image-box">
+                                <img src="../img/temporary/profesioales.svg" alt="">
+                            </figure>
+                            <h4>Seleccioná la fecha</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque sit tortor vitae faucibus morbi turpis.</p>
+                        </div>
+                        <div class="box">
+                            <figure class="image-box">
+                                <img src="../img/temporary/farmacias.svg" alt="">
+                            </figure>
+                            <h4>Revisá tu correo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Scelerisque sit tortor vitae faucibus morbi turpis.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bttn pink">Solicitar turno</a>
+                </section>
+            </div>
+
+            <div class="row center chequeo-preparacion">
+                <section class="col-9">
+                    <h2>Preparación para chequeos médicos</h2>
+                    <div class="content-box">
+                        <div class="conditions">
+                            <h4>La persona deberá asistir en las siguientes condiciones:</h4>
+                            <div class="checklist">
+                                <div class="item">
+                                    <i class="icon-check"></i>
+                                    <p>En ayunas total desde 12 hs. antes de la prevista para comenzar el chequeo.</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon-check"></i>
+                                    <p>No deberá suspender las medicaciones que esté tomando. En ese momento deberá mencionarlas.</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon-check"></i>
+                                    <p>Deberá llevar la primera orina de la mañana en un frasco estéril para análisis comprado en la farmacia.</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon-check"></i>
+                                    <p>Si realiza ergometría deberá llevar ropa cómoda (short o equipo de gimnasia, zapatillas, etc.).</p>
+                                </div>
+                                <div class="item">
+                                    <i class="icon-check"></i>
+                                    <p>Si realiza ecografía abdominal: (8hs de ayuno, no mascar chicle, no fumar).</p>
+                                </div>
+                            </div>
+                            <div class="accordions">
+                                <dl class="accordion">
+                                    <dt class="header">Si realiza PAP <i class="icon-arrow-down"></i></dt>
+                                    <dd class="content">
+                                        <h3>48 horas previas a la realización del estudio:</h3>
+                                        <ul>
+                                            <li>No tomar antibióticos.</li>
+                                            <li>No colocarse ningún tipo de cremas, óvulos, etc.</li>
+                                            <li>No mantener relaciones sexuales.</li>
+                                            <li>Debe concurrir sin higiene vaginal desde la noche anterior (no usar bidet, higienizarse la zona vaginal solo con agua).</li>
+                                            <li>Para la realización de este estudio es necesario que, de haber menstruado, hayan pasado cinco (5) días desde el último día de la misma.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="accordion">
+                                    <dt class="header">Si realiza Mamografía <i class="icon-arrow-down"></i></dt>
+                                    <dd class="content">
+                                        <ul>
+                                            <li>No usar talco, ni desodorante el día del estudio.</li>
+                                            <li>En caso de tener estudios mamarios anteriores, sugerimos traerlos.</li>
+                                            <li>Si es la misma Institución del año anterior, llevar estudios realizados de Imágenes (Ecografías – Mamografías).</li>
+                                            <li>Si es otra la Institución, llevar estudios del chequeo médico realizado el año anterior.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="accordion">
+                                    <dt class="header">Si realiza control Oftalmológico <i class="icon-arrow-down"></i></dt>
+                                    <dd class="content">
+                                        <ul>
+                                            <li>No debe concurrir con lentes de contacto, sino lleve el estuche correspondiente para poder guardarlas.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <dl class="accordion">
+                                    <dt class="header">Si realiza PSA <i class="icon-arrow-down"></i></dt>
+                                    <dd class="content">
+                                        <ul>
+                                            <li>No mantener relaciones sexuales.</li>
+                                            <li>No realizar actividad física (pileta, bicicleta, gimnasio).</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="row center chequeo-incluidos">
+                <section class="col-9">
+                    <div class="title">
+                        <h2>¿Qué incluye mi chequeo?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Volutpat neque viverra nunc arcu ultricies felis tincidunt sodales suspendisse.</p>
+                    </div>
+                    <div class="accordions">
+                        <dl class="accordion">
+                            <dt class="header">Análisis de laboratorio <i class="icon-arrow-down"></i></dt>
+                            <dd class="content">
+                                <ul>
+                                    <li>Acido úrico</li>
+                                    <li>Creatinina</li>
+                                    <li>Eritrosedimentación</li>
+                                    <li>Fibrinógeno</li>
+                                    <li>Glucemia (Glucosa)</li>
+                                    <li>HDL (Colesterol)</li>
+                                    <li>LDL (Colesterol)</li>
+                                    <li>Colesterol Total</li>
+                                    <li>Hemograma completo</li>
+                                    <li>Hepatograma completo</li>
+                                    <li>Orina completa</li>
+                                    <li>Triglicéridos</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="accordion">
+                            <dt class="header">Otros estudios <i class="icon-arrow-down"></i></dt>
+                            <dd class="content">
+                                <ul>
+                                    <li>ECG</li>
+                                    <li>Espirometría</li>
+                                    <li>Rx de tórax</li>
+                                    <li>Control Oftalmológico</li>
+                                    <li>Antígeno prostático específico (hombres a partir de 45 años)</li>
+                                    <li>CPK (a aquellos que en su historia clínica indica el uso de estatinas como medicación permanente)</li>
+                                    <li>Eco abdominal (a partir de 50 años)</li>
+                                    <li>Eco renal bilateral (a partir de 50 años)</li>
+                                    <li>Ecodoppler Carotideo (a partir de 60 años)</li>
+                                    <li>Ergometría (hombres a partir de 40 años y mujeres a partir de 50 años)</li>
+                                    <li>HIV por Elisa</li>
+                                    <li>Homocisteina (grupo de riesgo)</li>
+                                    <li>VDRL cualitativa</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="accordion">
+                            <dt class="header">Ginegología <i class="icon-arrow-down"></i></dt>
+                            <dd class="content">
+                                <ul>
+                                    <li>Colposcopia</li>
+                                    <li>Mamografía (mujeres a partir de 40 años hasta 69 años)</li>
+                                    <li>Papanicolaou</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="bttn-wrapper">
+                        <a href="#" class="bttn pink bttn-ico"><i class="icon-download"></i> ¿Qué incluye mi chequeo?</a>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+
+        <section class="container lateral-navigation">
+            <div class="content-box">
+                <a href="#" class="perfil hide-mobile">
+                    <i class="icon-user"></i>
+                    <span>Mi perfil</span>
+                </a>
+                <a href="#" class="chequeo active">
+                    <i class="icon-chequeo"></i>
+                    <span class="hide-mobile">Mi chequeo anual</span>
+                    <span class="hide-desktop">Mi chequeo</span>
+                </a>
+                <a href="#" class="cartilla">
+                    <i class="icon-cartilla"></i>
+                    <span class="hide-mobile">Buscar en cartilla</span>
+                    <span class="hide-desktop">Cartilla</span>
+                </a>
+                <a href="#" class="credencial">
+                    <i class="icon-credencial"></i>
+                    <span class="hide-mobile">Mi credencial</span>
+                    <span class="hide-desktop">Credencial</span>
+                </a>
+                <a href="#" class="autorizaciones">
+                    <i class="icon-autorizaciones"></i>
+                    <span>Autorizaciones</span>
+                </a>
+                <a href="#" class="reintegros">
+                    <i class="icon-reintegros"></i>
+                    <span>Reintegros</span>
+                </a>
+                <a href="#" class="urgencias hide-mobile">
+                    <i class="icon-urgencias"></i>
+                    <span>Token digital</span>
+                </a>
+                <a href="#" class="faqs hide-mobile">
+                    <i class="icon-faqs"></i>
+                    <span>Preguntas frecuentes</span>
+                </a>
+                <a href="#" class="home-servicios hide-mobile">
+                    <i class="icon-home"></i>
+                    <span>HOME DE SERVICIOS</span>
+                </a>
+            </div>
+        </section>
+
+        
+        <footer class="container site-footer">
+            <div class="row">
+                <div class="col-12 menus-col">
+                    <div class="column first-column">
+                        <a href="#" class="logo">
+                            <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                        </a>
+                        <ul>
+                            <li><a href="#">Legales</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de calidad</a></li>
+                            <li><a href="#">Decreto 955/24</a></li>
+                            <li><a href="#">Decreto 504/98</a></li>
+                        </ul>
+                        <div class="social">
+                            <p>¡Seguinos!</p>
+                            <div class="links">
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-filled"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-filled"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-filled"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-filled"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <p>SOBRE APSOT</p>
+                        <ul>
+                            <li><a href="#">Quiénes somos</a></li>
+                            <li><a href="#">Código de conducta</a></li>
+                            <li><a href="#">Contenido legal</a></li>
+                            <li><a href="#">Novedades</a></li>
+                            <li><a href="#">Propuesta de valor</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>SERVICIOS APSOT</p>
+                        <ul>
+                            <li><a href="#">Cartilla</a></li>
+                            <li><a href="#">Chequeos médicos</a></li>
+                            <li><a href="#">Reintegros</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Credencial digital</a></li>
+                            <li><a href="#">Gestión de trámites</a></li>
+                            <li><a href="#">Consultorios APSOT</a></li>
+                            <li><a href="#">App APSOT</a></li>
+                            <li><a href="#">Información al beneficiario</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>PRESTADORES</p>
+                        <ul>
+                            <li><a href="#">Descarga de documentación</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Validación de beneficiarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="column last-column">
+                        <p>CONTACTO</p>
+                        <a href="tel:08001222776" class="bttn-emergency">
+                            <i class="icon-emergency-outlined"></i>
+                            <span>0800 122 2776</span>
+                            <small>Emergencias</small>
+                        </a>
+                        <div class="contact">
+                            <p>Centro de atención al beneficiario</p>
+                            <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i>+54 11 708 27768</a>
+                            <a href="tel:08001228778" target="_blank"><i class="icon-phone-outlined"></i>0800 122 8778</a>
+                        </div>
+                        <div class="contact">
+                            <p>APSOT ORGANIZACIÓN TECHINT</p>
+                            <a href="https://maps.app.goo.gl/yXnqpjFWHepetZXv5" target="_blank"><i class="icon-location-outlined"></i>Av. Córdoba 320, CABA - Argentina</a>
+                            <a href="mailto:sugerencias@apsot.com"><i class="icon-mail-outlined"></i>sugerencias@apsot.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <section class="container copyright">
+            <div class="row center">
+                <div class="col-10 text-col">
+                    <p>Superintendencia de Servicios de Salud Órgano de Control - 0800-222-SALUD (72583) <a href="https://www.sssalud.gob.ar" target="_blank">www.sssalud.gob.ar</a> - Inscripción Rnos. 4-0230-1</p>
+                </div>
+                <div class="col-2 logo-col">
+                    <p>Diseño UX-UI por</p>
+                    <a href="#" target="_blank">
+                        <img src="../img/layout/logo/logo-id4you.svg" alt="ID4YOU">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="bttn-float">
+                <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/components/chequeoInformacion.js"></script>
+    <script src="../js/components/siteLateralNavigation.js"></script>
+    <script src="../js/components/siteNav.js"></script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/components/beneficiario.css">
+    <link rel="stylesheet" href="../css/components/beneficiarioLogged.css">
+    <link rel="stylesheet" href="../css/globals/siteFooter.css">
+    <link rel="stylesheet" href="../css/globals/siteNav.css">
+    <link rel="stylesheet" href="../css/globals/siteLateralNavigation.css">
+    <link rel="stylesheet" href="../css/globals/iconos.css">
+    <link rel="stylesheet" href="../css/globals/main.css">
+    <title>Document</title>
+</head>
+<body class="logged-in">
+
+    <div id="wrapper">
+
+        <nav class="container site-nav">
+            <div class="row fullwidth center">
+                <div class="col-6 col-logo">
+                    <a href="#" class="logo image-box">
+                        <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                    </a>
+                    <a href="tel:08001222776" class="bttn-emergency hide-mobile">
+                        <i class="icon-emergency-outlined"></i>
+                        <span>0800 122 2776</span>
+                        <small>Emergencias</small>
+                    </a>
+                </div>
+                <div class="col-6 col-bttn">
+                    <!-- Buttons -->
+                    <a href="#" class="bttn-login" data-comp="openLogged"><i class="icon-user-outlined"></i></a>
+                    <a href="#" class="bttn-search" data-comp="openSearch"><i class="icon-search"></i></a>
+                    <a href="#" class="bttn-menu" data-comp="openMenu"><i class="icon-menu"></i></a>
+                    <!-- Buscador -->
+                    <div class="buscador" data-comp="buscador">
+                        <input type="text" name="" id="" placeholder="Buscar dentro de Apsot">
+                        <input type="submit" value="Buscar">
+                    </div>
+                    <!-- Logged --> 
+                    <div class="logged">
+                        <span class="name"><span class="hide-desktop">Hola </span>Pedro gomez</span>
+                        <ul>
+                            <li><a href="#">Mi perfil</a></li>
+                            <li>Cerrar sesión</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Lateral Menu --> 
+                <div class="lateral-menu" data-comp="lateralMenu">
+                    <div class="menu-box">
+                        <div class="header">
+                            <a href="#" class="logo hide-desktop">
+                                <img src="../img/layout/logo/logo-blue.svg" alt="APSOT">
+                            </a>
+                            <button class="close-menu" data-comp="closeMenu"><span class="hide-mobile">Cerrar</span> <i class="icon-close"></i></button>
+                            <a href="tel:08001222776" class="bttn-emergency">
+                                <i class="icon-emergency-outlined"></i>
+                                <span>0800 122 2776</span>
+                                <small>Emergencias</small>
+                            </a>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="menu">
+                                <li class="has-submenu">
+                                    <a href="#">Plan Corporativo APSOT <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Mi chequeo Médico</a></li>
+                                        <li><a href="#">Cartilla</a></li>
+                                        <li><a href="#">Reintegros</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Credencial Digital</a></li>
+                                        <li><a href="#">Llamando al doctor</a></li>
+                                        <li><a href="#">Token digital</a></li>
+                                        <li><a href="#">Asistencia al viajero</a></li>
+                                        <li><a href="#">Asistencia en localidades pequeñas</a></li>
+                                        <li><a href="#">Información al beneficiario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Prestadores <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Validacion de afiliados</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Quiero ser prestador</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Chequeos Médicos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Consultorios Apsot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cartilla</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Sobre Apsot <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Informacion institucional</a></li>
+                                        <li><a href="#">Beneficios APSOT</a></li>
+                                        <li><a href="#">Contenido Legal</a></li>
+                                        <li><a href="#">Codigo de conducta</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Novedades</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <p>Nuestras redes</p>
+                                <div class="links">
+                                    <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-outlined"></i></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-outlined"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-outlined"></i></a>
+                                    <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-outlined"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <main class="beneficiario-logged">
+
+            <section class="container has-lateral-navigation beneficiario-header">
+                <div class="row fullwidth background-box">
+                    <picture class="image-box">
+                        <source media="(max-width:700px)" srcset="https://placehold.co/1080x540">
+                        <source media="(min-width:701px)" srcset="https://placehold.co/2880x427">
+                        <img src="https://placehold.co/2880x427">
+                    </picture>
+                </div>
+                <div class="row title-box center middle">
+                    <article class="col-12 title">
+                        <h1>Servicios APSOT</h1>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation beneficiario-servicios-destacados">
+                <div class="row center">
+                    <article class="col-12 title-box">
+                        <h2>Servicios destacados</h2>
+                    </article>
+                    <article class="col-12 cards-box">
+                        <div class="card disabled">
+                            <figure class="image-box">
+                                <img src="../img/temporary/chequeo.svg" alt="">
+                            </figure>
+                            <h3>Mi Chequeo Médico</h3>
+                            <p>Programa exclusivo para los empleados de la Organización Techint que cuenten con más de un año de antigüedad.</p>
+                            <a href="#" class="bttn pink">RESERVAR TURNO</a>
+                        </div>
+                        <div class="card">
+                            <figure class="image-box">
+                                <img src="../img/temporary/cartilla.svg" alt="">
+                            </figure>
+                            <h3>Cartilla Plan Corporativo</h3>
+                            <p>Accedé a nuestra Cartilla y encontrá fácilmente los servicios que necesitás.</p>
+                            <a href="#" class="bttn pink">BUSCAR EN CARTILLA</a>
+                        </div>
+                        <div class="card disabled">
+                            <figure class="image-box">
+                                <img src="../img/temporary/autorizaciones.svg" alt="">
+                            </figure>
+                            <h3>Autorizaciones</h3>
+                            <p>Gestioná tus autorizaciones médicas de manera rápida y sencilla.</p>
+                            <a href="#" class="bttn pink">IR AL PORTAL</a>
+                        </div>
+                        <div class="card disabled">
+                            <figure class="image-box">
+                                <img src="../img/temporary/reintegro.svg" alt="">
+                            </figure>
+                            <h3>Reintegros</h3>
+                            <p>Solicitá y consultá el estado de tus reintegros médicos.</p>
+                            <a href="#" class="bttn pink">IR A REINTEGROS</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation beneficiario-servicios">
+                <div class="row">
+                    <div class="col-12 title-box">
+                        <h2>Todos los servicios</h2>
+                    </div>
+                    <div class="col-12 links-box">
+                        <a href="#" class="link disabled">
+                            <i class="icon-location"></i>
+                            <span>Asistencia al <br> viajero</span>
+                        </a>
+                        <a href="#" class="link disabled">
+                            <i class="icon-location"></i>
+                            <span>Asistencia en localidades pequeñas</span>
+                        </a>
+                        <a href="#" class="link disabled">
+                            <i class="icon-location"></i>
+                            <span>Gestión de <br> trámites</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-location"></i>
+                            <span>Consultorios <br> Apsot</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-location"></i>
+                            <span>Token Digital</span>
+                        </a>
+                        <a href="#" class="link pink">
+                            <i class="icon-phone"></i>
+                            <span>Contact <br> Center</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-reintegros"></i>
+                            <span>Reintegros</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-autorizaciones"></i>
+                            <span>Autorizaciones</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-credencial"></i>
+                            <span>Credencial Digital</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-emergency"></i>
+                            <span>Urgencias y Emergencias</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-cartilla"></i>
+                            <span>Cartilla Plan Corporativo APSOT</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-doctor"></i>
+                            <span>Llamando al Doctor</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation beneficiario-apps">
+                <div class="row center">
+                    <article class="col-12 content-box">
+                        <h2>Descarga de Apps</h2>
+                        <div class="cards cards-box">
+                            <div class="card">
+                                <figure class="image-box">
+                                    <img src="../img/temporary/2.jpg">
+                                </figure>
+                                <h3>App Apsot</h3>
+                                <a href="#" class="bttn pink">DESCARGAR APP PARA ANDROID</a>
+                            </div>
+                            <div class="card">
+                                <figure class="image-box">
+                                    <img src="../img/temporary/2.jpg">
+                                </figure>
+                                <h3>App Apsot</h3>
+                                <a href="#" class="bttn pink">DESCARGAR APP PARA IOS</a>
+                            </div>
+                            <div class="card disabled">
+                                <figure class="image-box">
+                                    <img src="../img/temporary/2.jpg">
+                                </figure>
+                                <h3>Llamando al Doctor</h3>
+                                <a href="#" class="bttn pink">HACER TELECONSULTA</a>
+                            </div>
+                            <div class="card">
+                                <figure class="image-box">
+                                    <img src="../img/temporary/2.jpg">
+                                </figure>
+                                <h3>Credencial Digital</h3>
+                                <a href="#" class="bttn pink">DESCARGAR CREDENCIAL</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation beneficiario-documentacion">
+                <div class="row">
+                    <div class="col-12 content-box">
+                        <h2>Descarga de documentación</h2>
+                        <div class="links-box">
+                            <a href="#" target="_blank" class="link">
+                                <span>Normas Generales</span>
+                                <small class="hide-mobile">758K</small>
+                                <i class="icon-download"></i>
+                            </a>
+                            <a href="#" target="_blank" class="link">
+                                <span>PMA</span>
+                                <small class="hide-mobile">586K</small>
+                                <i class="icon-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        
+        <section class="container lateral-navigation beneficiario-logged">
+            <div class="content-box">
+                <a href="#" class="perfil hide-mobile">
+                    <i class="icon-user"></i>
+                    <span>Mi perfil</span>
+                </a>
+                <a href="#" class="chequeo">
+                    <i class="icon-chequeo"></i>
+                    <span class="hide-mobile">Mi chequeo anual</span>
+                    <span class="hide-desktop">Mi chequeo</span>
+                </a>
+                <a href="#" class="cartilla">
+                    <i class="icon-cartilla"></i>
+                    <span class="hide-mobile">Buscar en cartilla</span>
+                    <span class="hide-desktop">Cartilla</span>
+                </a>
+                <a href="#" class="credencial">
+                    <i class="icon-credencial"></i>
+                    <span class="hide-mobile">Mi credencial</span>
+                    <span class="hide-desktop">Credencial</span>
+                </a>
+                <a href="#" class="autorizaciones">
+                    <i class="icon-autorizaciones"></i>
+                    <span>Autorizaciones</span>
+                </a>
+                <a href="#" class="reintegros">
+                    <i class="icon-reintegros"></i>
+                    <span>Reintegros</span>
+                </a>
+                <a href="#" class="urgencias hide-mobile">
+                    <i class="icon-urgencias"></i>
+                    <span>Token digital</span>
+                </a>
+                <a href="#" class="faqs hide-mobile">
+                    <i class="icon-faqs"></i>
+                    <span>Preguntas frecuentes</span>
+                </a>
+                <a href="#" class="home-servicios active hide-mobile">
+                    <i class="icon-home"></i>
+                    <span>HOME DE SERVICIOS</span>
+                </a>
+            </div>
+        </section>
+        
+        <footer class="container site-footer">
+            <div class="row">
+                <div class="col-12 menus-col">
+                    <div class="column first-column">
+                        <a href="#" class="logo">
+                            <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                        </a>
+                        <ul>
+                            <li><a href="#">Legales</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de calidad</a></li>
+                            <li><a href="#">Decreto 955/24</a></li>
+                            <li><a href="#">Decreto 504/98</a></li>
+                        </ul>
+                        <div class="social">
+                            <p>¡Seguinos!</p>
+                            <div class="links">
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-filled"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-filled"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-filled"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-filled"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <p>SOBRE APSOT</p>
+                        <ul>
+                            <li><a href="#">Quiénes somos</a></li>
+                            <li><a href="#">Código de conducta</a></li>
+                            <li><a href="#">Contenido legal</a></li>
+                            <li><a href="#">Novedades</a></li>
+                            <li><a href="#">Propuesta de valor</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>SERVICIOS APSOT</p>
+                        <ul>
+                            <li><a href="#">Cartilla</a></li>
+                            <li><a href="#">Chequeos médicos</a></li>
+                            <li><a href="#">Reintegros</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Credencial digital</a></li>
+                            <li><a href="#">Gestión de trámites</a></li>
+                            <li><a href="#">Consultorios APSOT</a></li>
+                            <li><a href="#">App APSOT</a></li>
+                            <li><a href="#">Información al beneficiario</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>PRESTADORES</p>
+                        <ul>
+                            <li><a href="#">Descarga de documentación</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Validación de beneficiarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="column last-column">
+                        <p>CONTACTO</p>
+                        <a href="tel:08001222776" class="bttn-emergency">
+                            <i class="icon-emergency-outlined"></i>
+                            <span>0800 122 2776</span>
+                            <small>Emergencias</small>
+                        </a>
+                        <div class="contact">
+                            <p>Centro de atención al beneficiario</p>
+                            <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i>+54 11 708 27768</a>
+                            <a href="tel:08001228778" target="_blank"><i class="icon-phone-outlined"></i>0800 122 8778</a>
+                        </div>
+                        <div class="contact">
+                            <p>APSOT ORGANIZACIÓN TECHINT</p>
+                            <a href="https://maps.app.goo.gl/yXnqpjFWHepetZXv5" target="_blank"><i class="icon-location-outlined"></i>Av. Córdoba 320, CABA - Argentina</a>
+                            <a href="mailto:sugerencias@apsot.com"><i class="icon-mail-outlined"></i>sugerencias@apsot.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <section class="container copyright">
+            <div class="row center">
+                <div class="col-10 text-col">
+                    <p>Superintendencia de Servicios de Salud Órgano de Control - 0800-222-SALUD (72583) <a href="https://www.sssalud.gob.ar" target="_blank">www.sssalud.gob.ar</a> - Inscripción Rnos. 4-0230-1</p>
+                </div>
+                <div class="col-2 logo-col">
+                    <p>Diseño UX-UI por</p>
+                    <a href="#" target="_blank">
+                        <img src="../img/layout/logo/logo-id4you.svg" alt="ID4YOU">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="bttn-float">
+                <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/components/siteLateralNavigation.js"></script>
+    <script src="../js/components/siteNav.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/components/cartilla.css">
+    <link rel="stylesheet" href="../css/globals/pageLoggedBreadcrumbs.css">
+    <link rel="stylesheet" href="../css/globals/siteLateralNavigation.css">
+    <link rel="stylesheet" href="../css/globals/siteFooter.css">
+    <link rel="stylesheet" href="../css/globals/siteNav.css">
+    <link rel="stylesheet" href="../css/globals/iconos.css">
+    <link rel="stylesheet" href="../css/globals/main.css">
+    <title>Document</title>
+</head>
+<body class="logged-in">
+
+    <div id="wrapper">
+
+        <nav class="container site-nav">
+            <div class="row fullwidth center">
+                <div class="col-6 col-logo">
+                    <a href="#" class="logo image-box">
+                        <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                    </a>
+                    <a href="tel:08001222776" class="bttn-emergency hide-mobile">
+                        <i class="icon-emergency-outlined"></i>
+                        <span>0800 122 2776</span>
+                        <small>Emergencias</small>
+                    </a>
+                </div>
+                <div class="col-6 col-bttn">
+                    <!-- Buttons -->
+                    <a href="#" class="bttn-login" data-comp="openLogged"><i class="icon-user-outlined"></i></a>
+                    <a href="#" class="bttn-search" data-comp="openSearch"><i class="icon-search"></i></a>
+                    <a href="#" class="bttn-menu" data-comp="openMenu"><i class="icon-menu"></i></a>
+                    <!-- Buscador -->
+                    <div class="buscador" data-comp="buscador">
+                        <input type="text" name="" id="" placeholder="Buscar dentro de Apsot">
+                        <input type="submit" value="Buscar">
+                    </div>
+                    <!-- Logged --> 
+                    <div class="logged">
+                        <span class="name"><span class="hide-desktop">Hola </span>Pedro gomez</span>
+                        <ul>
+                            <li><a href="#">Mi perfil</a></li>
+                            <li>Cerrar sesión</li>
+                        </ul>
+                    </div>
+                </div>
+                 <!-- Lateral Menu --> 
+                <div class="lateral-menu" data-comp="lateralMenu">
+                    <div class="menu-box">
+                        <div class="header">
+                            <a href="#" class="logo hide-desktop">
+                                <img src="../img/layout/logo/logo-blue.svg" alt="APSOT">
+                            </a>
+                            <button class="close-menu" data-comp="closeMenu"><span class="hide-mobile">Cerrar</span> <i class="icon-close"></i></button>
+                            <a href="tel:08001222776" class="bttn-emergency">
+                                <i class="icon-emergency-outlined"></i>
+                                <span>0800 122 2776</span>
+                                <small>Emergencias</small>
+                            </a>
+                        </div>
+                        <div class="menu-container">
+                            <ul class="menu">
+                                <li class="has-submenu">
+                                    <a href="#">Plan Corporativo APSOT <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Mi chequeo Médico</a></li>
+                                        <li><a href="#">Cartilla</a></li>
+                                        <li><a href="#">Reintegros</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Credencial Digital</a></li>
+                                        <li><a href="#">Llamando al doctor</a></li>
+                                        <li><a href="#">Token digital</a></li>
+                                        <li><a href="#">Asistencia al viajero</a></li>
+                                        <li><a href="#">Asistencia en localidades pequeñas</a></li>
+                                        <li><a href="#">Información al beneficiario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Prestadores <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Validacion de afiliados</a></li>
+                                        <li><a href="#">Autorizaciones</a></li>
+                                        <li><a href="#">Quiero ser prestador</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Chequeos Médicos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Consultorios Apsot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cartilla</a>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Sobre Apsot <i class="icon-arrow-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Informacion institucional</a></li>
+                                        <li><a href="#">Beneficios APSOT</a></li>
+                                        <li><a href="#">Contenido Legal</a></li>
+                                        <li><a href="#">Codigo de conducta</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Novedades</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacto</a>
+                                </li>
+                            </ul>
+                            <div class="social">
+                                <p>Nuestras redes</p>
+                                <div class="links">
+                                    <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-outlined"></i></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-outlined"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-outlined"></i></a>
+                                    <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-outlined"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section class="container has-lateral-navigation page-logged-breadcrumbs">
+            <div class="row">
+                <div class="col-12 links-box">
+                    <span><a href="#">Home</a></span>
+                    <span><a href="#" class="active">Cartilla</a></span>
+                </div>
+            </div>
+        </section>
+
+        <main class="cartilla">
+
+            <header class="container has-lateral-navigation cartilla-header">
+                <div class="row">
+                    <div class="col-5 title-col">
+                        <h1>Buscá en la cartilla</h1>
+                        <h2>Plan Corporativo para personal fuera de convenio Organización Techint</h2>
+                    </div>
+                </div>
+            </header>
+    
+            <section class="container has-lateral-navigation cartilla-busqueda">
+                <div class="row">
+                    <div class="col-12 title-col">
+                        <h3>Buscá por zona y localidad</h3>
+                    </div>
+                    <div class="col-12 filtros-col">
+                        <div class="filtros-wrapper">
+                            <div class="dropdown">
+                                <div class="header">
+                                    <span>Seleccioná la zona que deseás buscar</span>
+                                    <i class="icon-arrow-down"></i>
+                                </div>
+                                <ul>
+                                    <li>Ciudad de Buenos Aires</li>
+                                    <li>GBA / Zona Norte</li>
+                                    <li>GBA / Zona Sur</li>
+                                    <li>Ciudad de Buenos Aires</li>
+                                    <li>GBA / Zona Norte</li>
+                                    <li>GBA / Zona Sur</li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <div class="header">
+                                    <span>Seleccioná la localidad que deseás buscar</span>
+                                    <i class="icon-arrow-down"></i>
+                                </div>
+                                <ul>
+                                    <li>Ciudad de Buenos Aires</li>
+                                    <li>GBA / Zona Norte</li>
+                                    <li>GBA / Zona Sur</li>
+                                    <li>Ciudad de Buenos Aires</li>
+                                    <li>GBA / Zona Norte</li>
+                                    <li>GBA / Zona Sur</li>
+                                </ul>
+                            </div>
+                            <button class="bttn pink" disabled data-comp="buscarCategorias">Continuar</button>
+                        </div>
+                        <div class="resultado-wrapper" style="display:none;">
+                            <div class="dropdown">
+                                <div class="header">
+                                    <i class="icon-location"></i>
+                                    <span>En GBA/Sudoeste, Lomas de Zamora</span>
+                                </div>
+                            </div>
+                            <a href="#" class="textlink"><i class="icon-arrow-left"></i> Cambiar ubicación</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation cartilla-afiliados-por-derecho">
+                <div class="row">
+                    <div class="col-12 link-box">
+                        <a href="#" class="link">
+                            <i class="icon-cartilla"></i>
+                            <span>Cartilla Afiliados por derecho de opción</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="container has-lateral-navigation cartilla-resultados-categorias" style="display:none;">
+                <div class="row">
+                    <div class="col-12 title-col">
+                        <h3>¿Qué estás buscando?</h3>
+                    </div>
+                    <div class="col-12 links-box">
+                        <a href="#" class="link">
+                            <i class="icon-guardias"></i>
+                            <span>Guardias</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-doctor"></i>
+                            <span>Especialidades</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-farmacias"></i>
+                            <span>Farmacias</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-pills"></i>
+                            <span>Centros de Diagnóstico y Tratamiento</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-vacunatorios"></i>
+                            <span>Vacunatorios</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-ortopedias"></i>
+                            <span>Ortopedias</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-opticas"></i>
+                            <span>Ópticas</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-pills"></i>
+                            <span>Odontología</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-pills"></i>
+                            <span>Instituciones para Internación</span>
+                        </a>
+                        <a href="#" class="link">
+                            <i class="icon-pills"></i>
+                            <span>Salud Mental</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <section class="container lateral-navigation">
+            <div class="content-box">
+                <a href="#" class="perfil hide-mobile">
+                    <i class="icon-user"></i>
+                    <span>Mi perfil</span>
+                </a>
+                <a href="#" class="chequeo">
+                    <i class="icon-chequeo"></i>
+                    <span class="hide-mobile">Mi chequeo anual</span>
+                    <span class="hide-desktop">Mi chequeo</span>
+                </a>
+                <a href="#" class="cartilla active">
+                    <i class="icon-cartilla"></i>
+                    <span class="hide-mobile">Buscar en cartilla</span>
+                    <span class="hide-desktop">Cartilla</span>
+                </a>
+                <a href="#" class="credencial">
+                    <i class="icon-credencial"></i>
+                    <span class="hide-mobile">Mi credencial</span>
+                    <span class="hide-desktop">Credencial</span>
+                </a>
+                <a href="#" class="autorizaciones">
+                    <i class="icon-autorizaciones"></i>
+                    <span>Autorizaciones</span>
+                </a>
+                <a href="#" class="reintegros">
+                    <i class="icon-reintegros"></i>
+                    <span>Reintegros</span>
+                </a>
+                <a href="#" class="urgencias hide-mobile">
+                    <i class="icon-urgencias"></i>
+                    <span>Token digital</span>
+                </a>
+                <a href="#" class="faqs hide-mobile">
+                    <i class="icon-faqs"></i>
+                    <span>Preguntas frecuentes</span>
+                </a>
+                <a href="#" class="home-servicios hide-mobile">
+                    <i class="icon-home"></i>
+                    <span>HOME DE SERVICIOS</span>
+                </a>
+            </div>
+        </section>
+
+        
+        <footer class="container site-footer">
+            <div class="row">
+                <div class="col-12 menus-col">
+                    <div class="column first-column">
+                        <a href="#" class="logo">
+                            <img src="../img/layout/logo/logo-white.svg" alt="APSOT">
+                        </a>
+                        <ul>
+                            <li><a href="#">Legales</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de calidad</a></li>
+                            <li><a href="#">Decreto 955/24</a></li>
+                            <li><a href="#">Decreto 504/98</a></li>
+                        </ul>
+                        <div class="social">
+                            <p>¡Seguinos!</p>
+                            <div class="links">
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin-filled"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-filled"></i></a>
+                                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-filled"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-filled"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <p>SOBRE APSOT</p>
+                        <ul>
+                            <li><a href="#">Quiénes somos</a></li>
+                            <li><a href="#">Código de conducta</a></li>
+                            <li><a href="#">Contenido legal</a></li>
+                            <li><a href="#">Novedades</a></li>
+                            <li><a href="#">Propuesta de valor</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>SERVICIOS APSOT</p>
+                        <ul>
+                            <li><a href="#">Cartilla</a></li>
+                            <li><a href="#">Chequeos médicos</a></li>
+                            <li><a href="#">Reintegros</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Credencial digital</a></li>
+                            <li><a href="#">Gestión de trámites</a></li>
+                            <li><a href="#">Consultorios APSOT</a></li>
+                            <li><a href="#">App APSOT</a></li>
+                            <li><a href="#">Información al beneficiario</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <p>PRESTADORES</p>
+                        <ul>
+                            <li><a href="#">Descarga de documentación</a></li>
+                            <li><a href="#">Autorizaciones</a></li>
+                            <li><a href="#">Validación de beneficiarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="column last-column">
+                        <p>CONTACTO</p>
+                        <a href="tel:08001222776" class="bttn-emergency">
+                            <i class="icon-emergency-outlined"></i>
+                            <span>0800 122 2776</span>
+                            <small>Emergencias</small>
+                        </a>
+                        <div class="contact">
+                            <p>Centro de atención al beneficiario</p>
+                            <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i>+54 11 708 27768</a>
+                            <a href="tel:08001228778" target="_blank"><i class="icon-phone-outlined"></i>0800 122 8778</a>
+                        </div>
+                        <div class="contact">
+                            <p>APSOT ORGANIZACIÓN TECHINT</p>
+                            <a href="https://maps.app.goo.gl/yXnqpjFWHepetZXv5" target="_blank"><i class="icon-location-outlined"></i>Av. Córdoba 320, CABA - Argentina</a>
+                            <a href="mailto:sugerencias@apsot.com"><i class="icon-mail-outlined"></i>sugerencias@apsot.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <section class="container copyright">
+            <div class="row center">
+                <div class="col-10 text-col">
+                    <p>Superintendencia de Servicios de Salud Órgano de Control - 0800-222-SALUD (72583) <a href="https://www.sssalud.gob.ar" target="_blank">www.sssalud.gob.ar</a> - Inscripción Rnos. 4-0230-1</p>
+                </div>
+                <div class="col-2 logo-col">
+                    <p>Diseño UX-UI por</p>
+                    <a href="#" target="_blank">
+                        <img src="../img/layout/logo/logo-id4you.svg" alt="ID4YOU">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="bttn-float">
+                <a href="#" target="_blank"><i class="icon-whatsapp-outlined"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="../js/components/cartilla.js"></script>
+    <script src="../js/components/siteLateralNavigation.js"></script>
+    <script src="../js/components/siteNav.js"></script>
+</body>
+</html>
