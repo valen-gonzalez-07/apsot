@@ -1,0 +1,164 @@
+@use '../globals/variables' as *;
+
+.emergencias {
+    color: $grey;
+    background: $backgroundGrey;
+    .first-part{
+        padding-bottom: 40px;
+        .title-col {
+            h2 {
+                color: $blue;
+                margin: 0 0 22px;
+                padding: 0px !important;
+            }
+            p {
+                line-height: 1.21em;
+            }
+        }
+    
+        .title-box {
+            font-size: 21px;
+            font-weight: $fontSemiBold;
+            color: $blue;
+        }
+        .first-text {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+    
+            .title-box {
+                margin-bottom: 20px;
+            }
+            .text-phone {
+                color: $pink;
+                font-weight: $fontSemiBold;
+            }
+        }
+        .container-steps {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin: auto;
+
+            
+    
+            .step-content {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 25px;
+                .step-circle {
+                    background: $white;
+                            box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+                    width: 75px;
+                    height: 75px;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+            
+                    p {
+                        color: $blue;
+                        font-size: 20px;
+                        font-weight: $fontSemiBold;
+                    }
+                }
+                .step-text {
+                    width: 224px;
+                    font-size: 13px;
+                }
+                .step-line {
+                    height: 2px;
+                    background-color: $blue;
+                    width: 189px;
+                }
+            }
+        }
+    }
+   .second-part {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightgrey;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    
+    .title-slogan {
+        color:$pink;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .title-slogan::after,
+    .title-slogan::before {
+        height: 2px;
+        color: $pink;
+        width: 362px;
+    }
+    .content-box {
+        background: $white;
+                box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+                
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        width: 835px;
+        padding: 21px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        .title-box {
+            font-size: 21px;
+            font-weight: $fontSemiBold;
+            color: $blue;
+        }
+
+        .items-info {
+            list-style: none;
+
+            .icon-check {
+                color: $pink;
+                margin-right: 10px;
+            }
+        }
+        .line-text {
+            height: 0.5px;
+            color: $grey;
+            width: 100%;
+            margin: 0px;
+        }
+        .text-aclaration {
+            font-size: 14px !important;
+            font-style: italic;
+            .highlighted {
+                font-weight: $fontMedium;
+            }
+            .small-text p{
+                font-weight:$fontLight;
+            }
+        }
+    }
+   } 
+}
+
+
+@media screen and
+(max-width: 1200px) {
+    section.col-12.title-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

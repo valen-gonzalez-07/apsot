@@ -1,0 +1,317 @@
+@use '../globals/variables' as *;
+
+.chequeo-informacion {
+    color: $grey;
+    .chequeo-pasos {
+        margin-bottom: 45px;
+        .title-col {
+            text-align: center;
+            margin-bottom: 30px;
+            h2 {
+                color: $blue;
+                margin: 0 0 15px;
+            }
+        }
+        .boxes-col {
+            text-align: center;
+            margin-bottom: 45px;
+            .box {
+                margin: 0 auto 35px;
+                max-width: 221px;
+                .image-box {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                    background: $white;
+                    box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+                    margin: 0 auto 24px;
+                    padding: 20px;
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                h4 {
+                    color: $blue;
+                    font-weight: $fontSemiBold;
+                    font-size: 19px;
+                    line-height: 1.21em;
+                    margin: 0 0 14px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 1.21em;
+                }
+            }
+            .bttn {
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    .chequeo-preparacion {
+        h2 {
+            text-align: center;
+            color: $blue;
+            margin: 0 0 35px;
+        }
+        .content-box {
+            margin-bottom: 45px;
+            border-radius: 10px;
+            background: $white;
+            box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+            padding: 25px 20px;
+            .conditions {
+                h4 {
+                    font-weight: $fontSemiBold;
+                    font-size: 16px;
+                    line-height: 1.21em;
+                    margin: 0 0 15px;
+                }
+                .checklist {
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        margin: 0 0 15px;
+                        i {
+                            flex: 0 1 24px;
+                            font-size: 18px;
+                            color: $pink;
+                        }
+                        p {
+                            line-height: 1.21em;
+                        }
+                    }
+                }
+            }
+        }
+        .accordions {
+            padding: 0 5px;
+            .accordion {
+                &:first-of-type {
+                    border-top: 1px solid $grey;
+                }
+            }
+        }
+    }
+
+    .chequeo-incluidos {
+        .title {
+            text-align: center;
+            h2 {
+                color: $blue;
+                margin: 0 0 15px;
+                line-height: 1.21em;
+            }
+            p {
+                margin: 0 auto 35px;
+                max-width: 413px;
+            }
+        }
+        .accordions {
+            padding: 25px;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+            margin-bottom: 35px;
+            .accordion {
+                &:first-of-type {
+                    padding-top: 0;
+                }
+                .header {
+                    font-size: 21px;
+                }
+            }
+        }
+        .bttn-wrapper {
+            margin-bottom: 80px;
+            .bttn {
+                margin: 0 auto;
+                gap: 5px;
+                text-transform: none;
+                font-weight: $fontSemiBold;
+                font-size: 14px;
+                padding: 10px 27px;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    
+    .accordions {
+        .accordion {
+            margin: 0;
+            padding: 15px 0;
+            --height: 300px;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $grey;
+            }
+            &:is(:last-of-type) {
+                padding-bottom: 0;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: $fontSemiBold;
+                font-size: 19px;
+                line-height: 1.21em;
+                color: $blue;
+                i {
+                    font-size: 8px;
+                    color: $pink;
+                }
+            }
+            .content {
+                margin: 0;
+                @include transition($delay);
+                max-height: 0;
+                opacity: 0;
+                pointer-events: none;
+                h3 {
+                    margin-bottom: 10px;
+                }
+                ul {
+                    list-style: outside disc;
+                    padding-left: 20px;
+                }
+            }
+            &.opened {
+                .header {
+                    i {
+                        scale: -1;
+                        margin-bottom: 5px;
+                    }
+                }
+                .content {
+                    padding-top: 15px;
+                    max-height: var(--height);
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .chequeo-preparacion {
+        h2 {
+            padding-inline: 20px;
+        }
+        .col-9 {
+            padding: 0;
+        }
+    }
+    .chequeo-incluidos {
+        .title {
+            padding-inline: 20px;
+        }
+        .col-9 {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .chequeo-informacion {
+        .chequeo-pasos {
+            margin-bottom: 60px;
+            .title-col {
+                margin-bottom: 60px;
+                h2 {
+                    margin: 0 0 16px;
+                }
+                p {
+                    font-size: 14px;
+                    max-width: 413px;
+                    margin: 0 auto;
+                }
+            }
+            .boxes-col {
+                margin-bottom: 60px;
+                .boxes {
+                    margin-bottom: 45px;
+                    @include flex();
+                    align-items: flex-start;
+                    justify-content: center;
+                    gap: 45px;
+                    .box {
+                        margin: 0;
+                        .image-box {
+                            width: 120px;
+                            height: 120px;
+                        }
+                        h4 {
+                            font-size: 21px;
+                            margin: 0 0 20px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .chequeo-preparacion {
+            h2 {
+                margin: 0 0 45px;
+            }
+            .content-box {
+                padding: 25px;
+                margin-bottom: 60px;
+                .conditions {
+                    h4 {
+                        margin: 0 0 10px;
+                    }
+                    .checklist {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 24px;
+                        padding-bottom: 20px;
+                        .item {
+                            margin: 0;
+                            flex: 0 1 calc(50% - 12px);
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .accordions {
+                padding: 0;
+            }
+        }
+
+        .chequeo-incluidos {
+            .bttn-wrapper {
+                margin-bottom: 95px;
+                .bttn {
+                    padding: 12.5px 27px;
+                }
+            }
+        }
+
+        .accordions {
+            .accordion {
+                padding: 20px 0;
+                .header {
+                    cursor: pointer;
+                    font-size: 21px;
+                }
+                .content {
+                    &.opened {
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}

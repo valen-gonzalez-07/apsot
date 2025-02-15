@@ -1,0 +1,473 @@
+@use '../globals/variables' as *;
+
+// @group Header 
+
+.mi-perfil-header {
+    .title-box {
+        margin-bottom: 25px;
+        h1 {
+            color: $blue;
+            font-weight: $fontExtraBold;
+            font-size: 25px;
+            margin: 0 0 20px;
+        }
+        h2 {
+            color: $lightBlue;
+            font-weight: $fontSemiBold;
+            font-size: 15px;
+            line-height: 1.46em;
+        }
+    }
+    .datos-box {
+        color: $darkGrey;
+        background: $white;
+        box-shadow: 0px 5px 18px #1F084614;
+        border-radius: 17px;
+        padding: 25px 25px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        .dato {
+            span {
+                display: block;
+                color: $blue;
+                font-weight: $fontSemiBold;
+                font-size: 14px;
+                line-height: 1.21em;
+                margin: 0 0 15px;
+            }
+            p {
+                text-transform: capitalize;
+                font-weight: $fontSemiBold;
+                font-size: 18px;
+                line-height: 1.16em;
+            }
+        }
+    }
+    .contact-box {
+        margin-bottom: 30px;
+        h3 {
+            color: $blue;
+            font-weight: $fontBold;
+            font-size: 18px;
+            line-height: 1.12em;
+            margin: 0 0 25px;
+        }
+        .contact {
+            span {
+                color: $blue;
+                font-weight: $fontSemiBold;
+                font-size: 14px;
+                line-height: 1.21em;
+                display: block;
+                margin: 0 0 15px;
+            }
+            .input-wrapper {
+                position: relative;
+                input {
+                    padding: 17px 20px;
+                    border-radius: 10px;
+                    border: 1px solid $lightBorderGrey;
+                    background: $white;
+                    font-weight: $fontSemiBold;
+                    font-size: 13px;
+                    line-height: 1.23em;
+                    color: $darkGrey;
+                    padding-right: 70px;
+                    width: 100%;
+                    &:focus {
+                        outline-color: $blue;
+                    }
+                }
+                button {
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translate(0, -50%);
+                    font-weight: $fontSemiBold;
+                    font-size: 13px;
+                    color: $blue;
+                    text-decoration: underline;
+                    pointer-events: none;
+                }
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 25px;
+            }
+        }
+        .bttn {
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .mi-perfil-header {
+        .datos-box {
+            margin: 0 20px 35px;
+            .dato {
+                flex: 0 1 100%;
+            }
+            :is(.nombre, .apellido) {
+                flex: 0 1 calc(50% - 15px);
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .mi-perfil-header {
+        .title-box {
+            margin-bottom: 35px;
+            h1 {
+                font-size: 40px;
+                margin: 0 0 15px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+        .datos-box {
+            margin: 0 0 40px;
+            padding: 25px 30px;
+            gap: 25px 93px;
+            .dato {
+                flex: 0 1 auto;
+                span {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .contact-box {
+            margin-bottom: 40px;
+            h3 {
+                font-size: 25px;
+                margin: 0 0 33px;
+            }
+            .contact {
+                &:not(:last-of-type) {
+                    margin: 0 0 23px;
+                }
+                span {
+                    font-size: 16px;
+                    margin: 0 0 12px;
+                }
+            }
+            .bttn {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}
+
+// ---
+
+// @group Turnos
+
+.mi-perfil-turnos {
+    padding-block: 30px;
+    background: $lightgrey;
+    color: $blue;
+    text-align: center;
+    .content-box {
+        h2 {
+            font-weight: $fontBold;
+            font-size: 18px;
+            line-height: 1.21em;
+            margin: 0 0 20px;
+        }
+        .disclaimer-box {
+            padding: 22px 26px;
+            background: $white;
+            box-shadow: 0px 5px 18px #1F084614;
+            border-radius: 17px;
+            h3 {
+                font-weight: $fontMedium;
+                font-size: 11px;
+                line-height: 1.54em;
+                text-transform: uppercase;
+                margin: 0 0 15px;
+            }
+            p {
+                color: $grey;
+            }
+            .bttn {
+                margin: 15px auto 0;
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .mi-perfil-turnos {
+        padding-block: 40px;
+        text-align: left;
+        .content-box {
+            h2 {
+                font-size: 25px;
+                margin: 0 0 35px;
+            }
+            .disclaimer-box {
+                padding: 25px;
+                position: relative;
+                h3 {
+                    font-size: 16px;
+                    line-height: 1.5em;
+                }
+                :is(h3, p) {
+                    padding-right: 215px;
+                }
+                .bttn {
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translate(0, -50%);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// ---
+
+// @group Grupo Familiar
+
+.mi-perfil-grupo-familiar {
+    padding-block: 37px 50px;
+    .title-box {
+        color: $grey;
+        margin-bottom: 31px;
+        h2 {
+            color: $blue;
+            font-weight: $fontBold;
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+        h3 {
+            font-weight: $fontMedium;
+            font-size: 15px;
+            line-height: 1.46em;
+        }
+    }
+    .familiar-box {
+        color: $darkGrey;
+        background: $white;
+        box-shadow: 0px 5px 18px #1F084614;
+        border-radius: 17px;
+        padding: 25px;
+        --heigthEditor: 375px;
+        .header-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $secondaryGrey;
+            h4 {
+                color: $lightBlue;
+                text-transform: uppercase;
+                font-weight: $fontBold;
+                line-height: 1.2em;
+                font-size: 15px;
+            }
+            button {
+                position: relative;
+                margin-right: 23px;
+                font-weight: $fontSemiBold;
+                font-size: 13px;
+                text-decoration: underline;
+                color: $blue; 
+                i {
+                    font-size: 8px;
+                    position: absolute;
+                    right: -23px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                }
+            }
+        }
+        .datos-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 27px;
+            .dato {
+                span {
+                    display: block;
+                    color: $blue;
+                    font-weight: $fontSemiBold;
+                    font-size: 16px;
+                    line-height: 1.21em;
+                    margin: 0 0 15px;
+                }
+                p {
+                    text-transform: capitalize;
+                    font-weight: $fontSemiBold;
+                    font-size: 20px;
+                    line-height: 1.2em;
+                }
+            }
+        }
+        .contact-box {
+            max-height: 0;
+            opacity: 0;
+            pointer-events: none;
+            @include transition($delay);
+            .contact {
+                span {
+                    color: $blue;
+                    font-weight: $fontSemiBold;
+                    font-size: 14px;
+                    line-height: 1.21em;
+                    display: block;
+                    margin: 0 0 15px;
+                }
+                .input-wrapper {
+                    position: relative;
+                    input {
+                        padding: 17px 20px;
+                        border-radius: 10px;
+                        border: 1px solid $lightBorderGrey;
+                        background: $white;
+                        font-weight: $fontSemiBold;
+                        font-size: 13px;
+                        line-height: 1.23em;
+                        color: $darkGrey;
+                        padding-right: 70px;
+                        width: 100%;
+                        &:focus {
+                            outline-color: $blue;
+                        }
+                    }
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        right: 20px;
+                        transform: translate(0, -50%);
+                        font-weight: $fontSemiBold;
+                        font-size: 13px;
+                        color: $blue;
+                        text-decoration: underline;
+                        pointer-events: none;
+                    }
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 25px;
+                }
+                &:first-of-type {
+                    @include transition($delay);
+                    margin-top: 0;
+                }
+            }
+            .bttn {
+                margin: 30px auto 0;
+            }
+        }
+        &.opened {
+            .header-box {
+                button {
+                    i {
+                        scale: -1;
+                        transform-origin: top;
+                    }
+                }
+            }
+            .contact-box {
+                opacity: 1;
+                pointer-events: all;
+                max-height: var(--heigthEditor);
+                margin-top: 29px;
+            }
+        }
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .mi-perfil-grupo-familiar {
+        .familiar-box {
+            margin-inline: 20px;
+            .datos-box {
+                .dato {
+                    flex: 0 1 100%;
+                }
+                :is(.nombre, .apellido) {
+                    flex: 0 1 calc(50% - 15px);
+                }
+            }
+        }
+        &.opened {
+            .header-box {
+                button {
+                    i {
+                        scale: -1;
+                        transform-origin: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .mi-perfil-grupo-familiar {
+        padding-block: 40px 60px;
+        .title-box {
+            margin-bottom: 40px;
+            h2 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+        }
+        .familiar-box {
+            .header-box {
+                cursor: pointer;
+                h4 {
+                    font-size: 20px;
+                }
+            }
+            .datos-box {
+                gap: 25px 93px;
+                .dato {
+                    flex: 0 1 auto;
+                }
+            }
+            .contact-box {
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 30px 25px;
+                .contact {
+                    flex: 0 1 calc(50% - 15px);
+                    &:not(:last-of-type) {
+                        margin: 0;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                .bttn {
+                    margin: auto 0 0 auto;
+                }
+            }
+            &.opened {
+                .contact-box {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

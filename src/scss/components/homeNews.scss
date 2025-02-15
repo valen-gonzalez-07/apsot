@@ -1,0 +1,90 @@
+@use '../globals/variables' as *;
+
+.home-news {
+    padding-block: 35px;
+    background: $lightgrey;
+    overflow: hidden;
+    h2 {
+        margin: 0 0 28px;
+        color: $blue;
+    }
+    .splide {
+        .splide__slide {
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 17px;
+            overflow: hidden;
+            box-shadow: 0px 5px 18px #1F084614;
+            @include transition($delay);
+            background: $white;
+            color: $grey;
+            margin-bottom: 17px;
+            .image-box {
+                height: 197px;
+            }
+            .text-box {
+                padding: 24px;
+                time {
+                    font-weight: $fontMedium;
+                    font-size: 13px;
+                    line-height: 1.5em;
+                    display: block;
+                    margin: 0 0 16px;
+                    span {
+                        color: $pink;
+                    }
+                }
+                h3 {
+                    font-weight: $fontBold;
+                    font-size: 18px;
+                    line-height: 1.22em;
+                    margin: 0 0 16px;
+                    color: $blue;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 1.57em;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .bttn {
+        margin: 18px auto 0;
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .home-news {
+        .slider-col {
+            padding-inline: 0;
+            .splide__track {
+                padding-inline: 20px 50px!important;
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .home-news {
+        padding-block: 50px;
+        h2 {
+            margin: 0 0 45px;
+        }
+        .splide__track {
+            overflow: visible;
+            .splide__slide:hover {
+                box-shadow: 0px 5px 18px #1F08463D;
+            }
+        }
+        .bttn {
+            margin: 23px auto 0;
+        }
+    }
+}

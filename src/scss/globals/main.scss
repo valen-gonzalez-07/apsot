@@ -1,0 +1,303 @@
+@use 'variables' as *;
+
+// ----- @group Reset
+html, 
+body, 
+section, 
+div, 
+article, 
+footer, 
+nav, 
+header,
+h1, h2, h3, h4, h5, h6, p, li, span, small, figure, img,
+ul, ol {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+textarea,
+select,
+input,
+option,
+button {
+    background: none;
+    font-family: $mainFont;
+    font-weight: $fontRegular;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    font: normal $fontRegular 16px/1.5em $mainFont;
+    background: $backgroundGrey;
+    .hidden {
+        display: none;
+    }
+    #wrapper {
+        position: relative;
+        overflow-x: hidden;
+    }
+}
+// ----- @end Reset
+
+
+// ----- @group Globals
+.container {
+    width: 100%;
+    .row {
+        @include flex();
+        width: 100%; 
+        margin: 0 auto; 
+        align-items: baseline; 
+        max-width: $rowDefault;
+        &.fullwidth {
+            max-width: 100%;
+        }
+        &.expanded {
+            max-width: var(--rowExpanded);
+        }
+    }
+    :where([class^="col-"], 
+    [class*=" col-"]) {
+        padding-inline: $gutter;
+        flex: 0 1 100%; 
+        max-width: 100%;
+    }
+    // Images
+    .image-box {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    .img-box {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    // Text 
+    h2, .h2 {
+        font-size: 26px;
+        line-height: 1.15em;
+        font-weight: $fontExtraBold;
+    }
+    h3, .h3 {
+        font-size: 14px;
+        line-height: 1.25em;
+        font-weight: $fontSemiBold;
+    }
+    p, li {
+        font-size: 13px;
+        line-height: 1.538em;
+    }
+    // Buttons 
+    a, 
+    .bttn,
+    input {
+        @include transition($delay);
+    }
+    .bttn {
+        @include flex();
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        font-size: 13px;
+        line-height: 1.23em;
+        font-weight: $fontBold;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 11.5px 24px 12.5px;
+        border: 1px solid;
+        border-radius: 35px;
+        @include transition($delay);
+        box-shadow: 0px 3px 18px #1F08461C;
+        &.pink {
+            color: $white;
+            border-color: $pink;
+            background-color: $pink;
+            &:hover {
+                background-color: $white;
+                color: $pink;
+            }
+        }
+    }
+    .bttn-emergency {
+        position: relative;
+        display: inline-block;
+        padding-left: 50px;
+        color: $white;
+        i {
+            font-size: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        span {
+            display: block;
+            margin: 0 0 2px;
+            font-weight: $fontBold;
+            font-size: 16px;
+            line-height: 1.25em;
+        }
+        small {
+            display: block;
+            font-size: 13px;
+            line-height: 1.23em;
+        }
+    }
+    .bttn-float {
+        z-index: calc($zIndexSiteNav - 1);
+        position: fixed;
+        right: 5vw;
+        bottom: 5vw;
+        a {
+            text-decoration: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            width: 64px;
+            height: 64px;
+            color: $white;
+            background: $activeGreen;
+            font-size: 50px;
+            box-shadow: 0px 5px 18px #1F084614;
+        }
+    }
+    ::placeholder {
+        opacity: 1;
+        @include transition($delay);
+    }
+    :focus::placeholder {
+        opacity: 0;
+    }
+}
+@media screen and
+(min-width: 961px) {
+    .container {
+        .row {
+            // Layout Rows
+            &.left { 
+                -webkit-box-pack: start; 
+                -ms-flex-pack: start; 
+                justify-content: flex-start; 
+            }
+            &.center { 
+                -webkit-box-pack: center; 
+                -ms-flex-pack: center; 
+                justify-content: center; 
+            }
+            &.right { 
+                -webkit-box-pack: end; 
+                -ms-flex-pack: end; 
+                justify-content: flex-end; 
+            }
+            &.between { 
+                -webkit-box-pack: justify; 
+                -ms-flex-pack: justify; 
+                justify-content: space-between; 
+            } 
+            &.top { 
+                -webkit-box-align: start; 
+                -ms-flex-align: start; 
+                align-items: flex-start; 
+            }
+            &.middle { 
+                -webkit-box-align: center; 
+                -ms-flex-align: center; 
+                align-items: center; 
+            }
+            &.bottom { 
+                -webkit-box-align: end; 
+                -ms-flex-align: end; 
+                align-items: flex-end; 
+            }
+        }
+        :where([class^="col-"], 
+        [class*=" col-"]) {
+            flex: 0 0 auto; 
+            padding-inline: 10px;
+        }
+        // Grid Columns
+        @for $i from 1 through $columns {
+            .col-#{$i} {
+                -ms-flex: 0 0 calc(100% / $columns) * $i; 
+                flex: 0 0 calc(100% / $columns) * $i; 
+                max-width: calc(100% / $columns) * $i; 
+            }
+            .offset-left-#{$i} {
+                margin-left: calc(100% / $columns) * $i; 
+            }
+            .offset-right-#{$i} {
+                margin-right: calc(100% / $columns) * $i; 
+            }
+        }
+        // Text 
+        h2, .h2 {
+            font-size: 40px;
+            line-height: 1.125em;
+        }
+        h3, .h3 {
+            font-size: 19px;
+        }
+        p, li {
+            font-size: 16px;
+            line-height: 1.5em;
+        }
+        // Buttons
+        .bttn {
+            font-size: 14px;
+            line-height: 1.21em;
+            padding: 14px 27px;
+        }
+        .bttn-float {
+            a {
+                width: 82px;
+                height: 82px;
+                font-size: 62px;
+                &:hover {
+                    scale: 1.05;
+                }
+            }
+        }
+        // General 
+        .hide-desktop {
+            display: none!important;
+        }
+        &.has-lateral-navigation {
+            padding-left: calc($widthLateralNavigationDesktop + 60px);
+            padding-right: 30px;
+        }
+    }
+}
+@media screen and
+(max-width: 960px) {
+    .container {
+        // General 
+        .hide-mobile {
+            display: none!important;
+        }
+    }
+}
+// ----- @end Globals 
+
+

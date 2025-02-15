@@ -1,0 +1,145 @@
+@use '../globals/variables' as *;
+
+.home-about {
+    position: relative;
+    padding-block: 35px;
+    &::before {
+        content: '';
+        width: 189px;
+        height: 172px;
+        background: no-repeat url('../../../public/img/layout/home/micelanea.svg') -55px 0;
+        background-size: contain;
+        position: absolute;
+        top: 270px;
+        left: 0;
+    }
+    .row {
+        position: relative;
+    }
+    .col-title {
+        h3 {
+            color: $pink;
+            margin: 0 0 12px;
+        }
+        h2 {
+            color: $blue;
+            margin: 0 0 30px;
+        }
+    }
+    .col-image {
+        .img-box {
+            img {
+                border-radius: 20px;
+                box-shadow: 0px 5px 25px #1F084614;
+            }
+        }
+    }
+    .col-cards {
+        .card {
+            position: relative;
+            background: $white;
+            color: $grey;
+            padding: 20px;
+            border-radius: 17px;
+            box-shadow: 0px 5px 18px #1F084614;
+            h3 {
+                font-size: 19px;
+                line-height: 1.31em;
+                color: $blue;
+                margin: 0 0 32px;
+            }
+            .image-box {
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                img {
+                    object-fit: contain;
+                    object-position: left top;
+                }
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+        .bttn {
+            margin: 30px auto 0;
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .home-about {
+        .col-title {
+            text-align: center;
+            padding-inline: 45px;
+        }
+        .col-image {
+            .img-box {
+                width: 270px;
+                height: auto;
+                margin-inline: auto;
+            }
+        }
+        .col-cards {
+            margin-top: 30px;
+            .card {
+                h3 {
+                    padding-top: 19px;
+                    padding-left: 82px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .home-about {
+        padding-block: 60px 136px;
+        &::before {
+            top: 320px;
+            width: 310px;
+            height: 278px;
+            background-position-x: -120px;
+        }
+        :is(.col-cards, .col-title) {
+            padding-left: calc(40% + 40px);
+        }
+        .col-title {
+            h3 {
+                margin: 0 0 16px;
+            }
+            h2 {
+                margin: 0 0 35px;
+            }
+        }
+        .col-cards {
+            .card {
+                padding: 25px 25px 25px 125px;
+                .image-box {
+                    width: 70px;
+                    height: 70px;
+                }
+                h3 {
+                    margin: 0 0 15px;
+                }
+            }
+            .bttn {
+                margin: 40px 0 0;
+            }
+        }
+        .col-image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 40%;
+            .image-box {
+                height: 100%;
+            }
+        }
+    }
+}

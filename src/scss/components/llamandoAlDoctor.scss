@@ -1,0 +1,73 @@
+@use '../globals/variables' as *;
+
+
+.llamando-al-doctor {
+    color: $grey;
+    background: $backgroundGrey;
+    padding-bottom: 40px;
+
+        .title-col {
+            h2 {
+                color: $blue;
+                margin: 0 0 22px;
+                padding: 0px !important;
+            }
+            p {
+                line-height: 1.21em;
+            }
+        }
+
+        .llamando-intro {
+            p{
+                color: $lightBlue;
+                font-weight: $fontSemiBold;
+                font-size: 18px;
+                width: 705px;
+                margin-bottom: 40px;
+        }
+        }
+        .content-box {
+            background: $white;
+                    box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+                    
+            border-radius: 15px;
+            margin-bottom: 60px;
+            display: flex;
+            width: 835px;
+            padding: 21px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        
+            .title-box {
+                color: $pink;
+                text-align: center;
+            }
+            .line-text {
+                height: 0.5px;
+                color: $grey;
+                width: 100%;
+                margin: 0px;
+            }
+            .text-highlight {
+                font-weight: $fontSemiBold;
+            }
+
+            .buttons-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .bttn {
+                    margin: 20px;
+                }           
+             }
+        }
+
+            
+            
+
+
+}

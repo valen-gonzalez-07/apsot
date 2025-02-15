@@ -1,0 +1,67 @@
+// ----- @group Variables 
+$rowDefault: 1220px;
+$columns: 12; 
+$gutter: 20px;
+$widthLateralNavigationDesktop: 291px;
+$zIndexSiteNav: 99;
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$blue: #005096;
+$darkBlue: #323C74;
+$lightBlue: #008FC5;
+$fluorBlue: #07BBFF;
+$hoverBlue: #5ED3FF;
+$pink: #E20178;
+$lightPink: #E23A93;
+$grey: #6E6E6E;
+$darkGrey: #383838;
+$secondaryGrey: #D3D1D1;
+$lightgrey: #F2F2F2;
+$secondaryLightgrey: #F5F5F5;
+$backgroundGrey: #FBFBFB;
+$paginationGrey: #E9E9E9;
+$borderGrey: #9B9797;
+$lightBorderGrey: #ABABAB;
+$hoursBorderGrey: #CFCFCF;
+$disabledGrey: #BBB9B9;
+$copyGrey: #ACACAC;
+$activeGreen: #8DC63F;
+// Typografies
+$mainFont: "Inter", serif;
+$fontLight: 300;
+$fontRegular: 400;
+$fontMedium: 500;
+$fontSemiBold: 600;
+$fontBold: 700;
+$fontExtraBold: 800;
+// Transitions 
+$delay: .3s;
+$delayLong: .6s;
+$transition: all $delay;
+// ----- @end Variables 
+
+
+// ----- @group Globals 
+// Transitions
+@mixin transition($delay) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+@mixin transitionLonger($delayLong) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+// Grid 
+@mixin flex() {
+    display: flex; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+}
+// ----- @end Globals

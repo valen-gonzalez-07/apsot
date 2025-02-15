@@ -1,0 +1,458 @@
+@use '../globals/variables' as *;
+
+
+// @group Header
+
+.beneficiario-header {
+    position: relative;
+    color: $white;
+    .background-box {
+        .image-box {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                background: linear-gradient(90deg, #000000 0%, #00000000 100%);
+                opacity: .4;
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+    .title-box {
+        .title {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            h1 {
+                font-weight: $fontBold;
+                font-size: 26px;
+                line-height: 1.07em;
+                text-shadow: 1px 1px 5px #00000029;
+            }
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .beneficiario-header {
+        .background-box {
+            height: 150px;
+        }
+        .title-box {
+            .title {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and
+(max-width: 700px) {
+    .beneficiario-header {
+        .background-box {
+            aspect-ratio: 2 / 1;
+            height: auto;
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-header {
+        height: 285px;
+        .title-box {
+            position: relative;
+            height: 100%;
+            .title {
+                h1 {
+                    font-size: 50px;
+                    line-height: 1.12em;
+                }
+            }
+        }
+    }
+
+    .site-nav + .beneficiario-header {
+        margin-top: 37px!important;
+    }
+}
+
+// ------
+
+// @group Servicios Destacados
+
+.beneficiario-servicios-destacados {
+    color: $grey;
+    padding-block: 30px;
+    text-align: center;
+    .title-box {
+        h2 {
+            color: $blue;
+            font-weight: $fontBold;
+            font-size: 18px;
+            line-height: 1.16em;
+            margin: 0 0 30px;
+        }
+    }
+    .cards-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .card {
+            flex: 0 1 320px;
+            padding: 25px;
+            background: $white;
+            box-shadow: 0px 5px 18px #1F084614;
+            border-radius: 17px;
+            .image-box {
+                width: 60px;
+                height: 60px;
+                margin: 0 auto 15px;
+                img {
+                    object-fit: contain;
+                }
+            }
+            h3 {
+                font-weight: $fontExtraBold;
+                font-size: 18px;
+                line-height: 1.21em;
+                color: $blue;
+                margin: 0 0 15px;
+            }
+            .bttn {
+                margin: 25px auto 0;
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-servicios-destacados {
+        padding-block: 40px 50px;
+        --rowExpanded: 1250px;
+        .title-box {
+            h2 {
+                font-weight: $fontExtraBold;
+                font-size: 30px;
+                margin: 0 0 40px;
+            }
+        }
+        .cards-box {
+            justify-content: flex-start;
+            .card {
+                flex: 0 1 292px;
+                padding: 20px 20px 70px;
+                position: relative;
+                min-height: 334px;
+                .image-box {
+                    width: 78px;
+                    height: 78px;
+                }
+                h3 {
+                    font-size: 22px;
+                    line-height: 1.18em;
+                }
+                .bttn {
+                    width: max-content;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 20px;
+                    transform: translate(-50%, 0);
+                }
+            }
+        }
+    }
+}
+
+// ------
+
+// @group Servicios 
+
+.beneficiario-servicios {
+    padding-block: 30px;
+    background: $lightgrey;
+    .title-box {
+        color: $blue;
+        h2 {
+            font-size: 18px;
+            line-height: 1.16em;
+            margin: 0 0 25px;
+        }
+    }
+    .links-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+        .link {
+            flex: 0 1 95px;
+            height: 75px;
+            display: flex;
+            box-sizing: border-box;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: $grey;
+            font-size: 10px;
+            line-height: 1.2em;
+            font-weight: $fontSemiBold;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: 0px 3px 8px #1F084614;
+            padding: 6px 10px;
+            i {
+                font-size: 19px;
+                color: $blue;
+            }
+            &.pink {
+                color: $pink;
+                i {
+                    color: $pink;
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(max-width: 360px) {
+    .beneficiario-servicios {
+        .links-box {
+            .link {
+                flex: 0 1 calc(33% - 13px);
+                max-width: calc(33% - 13px);
+            }
+        }
+    }
+}
+
+@media screen and
+(max-width: 960px) {
+    .beneficiario-servicios {
+        .title-box {
+            h2 {
+                font-weight: $fontBold;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-servicios {
+        padding-block: 50px;
+        --rowExpanded: 1250px;
+        .title-box {
+            h2 {
+                font-size: 30px;
+                margin: 0 0 40px;
+            }
+        }
+        .links-box {
+            gap: 23px;
+            justify-content: flex-start;
+            .link {
+                flex: 0 1 185px;
+                gap: 19px;
+                height: 143px;
+                padding: 17px 6px;
+                font-size: 16px;    
+                line-height: 1.18em;
+                border-radius: 17px;
+                border: 1px solid $white;
+                i {
+                    font-size: 38px;
+                }
+                &:hover {
+                    color: $blue;
+                    border-color: $blue;
+                }
+                &.pink:hover {
+                    i {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ------
+
+// @group Apps 
+
+.beneficiario-apps {
+    padding-block: 30px;
+    text-align: center;
+    color: $blue;
+    .content-box {
+        h2 {
+            font-weight: $fontBold;
+            font-size: 18px;
+            line-height: 1.16em;
+            margin: 0 0 25px;
+        }
+        .cards-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            .card {
+                flex: 0 1 320px;
+                padding: 0 0 25px;
+                background: $white;
+                border-radius: 17px;
+                overflow: hidden;
+                box-shadow: 0px 5px 18px #1F084614;
+                .image-box {
+                    width: 100%;
+                    height: 156px;
+                }
+                h3 {
+                    font-weight: $fontBold;
+                    font-size: 18px;
+                    line-height: 1.16em;
+                    padding-inline: 30px;
+                    margin-top: 20px;
+                }
+                .bttn {
+                    margin: 25px auto 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-apps {
+        padding-block: 50px;
+        .content-box {
+            h2 {
+                font-weight: $fontExtraBold;
+                font-size: 30px;
+                margin: 0 0 40px;
+            }
+            .cards-box {
+                gap: 35px;
+                justify-content: center;
+                .card {
+                    flex: 0 1 min(calc(50% - 20px), 391px);
+                    padding: 0 0 28px;
+                    .image-box {
+                        height: 190px;
+                    }
+                    h3 {
+                        font-weight: $fontExtraBold;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ------
+
+// @group Documentación
+
+.beneficiario-documentacion {
+    background: $lightgrey;
+    padding-block: 30px 60px;
+    .content-box {
+        h2 {
+            color: $blue;
+            text-align: center;
+            font-weight: $fontBold;
+            font-size: 18px;
+            line-height: 1.16em;
+            margin: 0 0 30px;
+        }
+        .links-box {
+            .link {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: $white;
+                box-shadow: 0px 5px 18px #1F084614;
+                border-radius: 10px;
+                padding: 12.5px 25.5px 12.5px 20px;
+                span {
+                    font-weight: $fontSemiBold;
+                    font-size: 13px;
+                    line-height: 1.46em;
+                    color: $blue;
+                }
+                small {
+                    font-weight: $fontMedium;
+                    font-size: 16px;
+                    color: $grey;
+                }
+                i {
+                    font-size: 20px;
+                    color: $pink;
+                }
+                &:not(:last-of-type) {
+                    margin: 0 0 15px;
+                }
+            }
+        }
+    }
+}
+
+.beneficiario-documentacion + .site-footer {
+    margin-top: -10px;
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-documentacion {
+        padding-top: 40px;
+        .content-box {
+            h2 {
+                font-weight: $fontExtraBold;
+                font-size: 30px;
+                margin: 0 0 40px;
+            }
+            .links-box {
+                .link {
+                    padding: 16.5px 30px 17px 34px;
+                    span {
+                        font-size: 16px;
+                        line-height: 1.18em;
+                        flex: 0 1 calc(100% - 120px);
+                    }
+                    i {
+                        font-size: 25px;
+                        transition: $transition;
+                    }
+                    &:hover {
+                        i {
+                            color: $blue;
+                        }
+                    }
+                    &:not(:last-of-type) {
+                        margin: 0 0 17px;
+                    }
+                }
+            }
+        }
+    }
+}

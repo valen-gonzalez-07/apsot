@@ -1,0 +1,84 @@
+@use '../globals/variables' as *;
+
+.site-nav + .beneficiario-logged {
+    margin-top: 53px;
+}
+
+@media screen and
+(min-width: 961px) {
+    .site-nav + .beneficiario-logged {
+        margin-top: 37px;
+    }
+}
+
+// @group Servicios Destacados
+
+.beneficiario-logged {
+    .beneficiario-servicios-destacados {
+        .cards-box {
+            .card {
+                &.disabled {
+                    pointer-events: none;
+                    h3 {
+                        color: $disabledGrey;
+                    }
+                    .bttn.pink {
+                        background: $disabledGrey;
+                        border-color: $disabledGrey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ---
+
+// @group Servicios
+
+.beneficiario-logged {
+    .beneficiario-servicios {
+        .links-box {
+            .link {
+                &.disabled {
+                    pointer-events: none;
+                    color: $disabledGrey;
+                    i {
+                        color: $disabledGrey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .beneficiario-logged {
+        .beneficiario-servicios {
+            .links-box {
+                gap: 30px;
+            }
+        }
+    }
+}
+
+// ---
+
+// @group Apps
+
+.beneficiario-logged {
+    .beneficiario-apps {
+        .cards-box {
+            .card {
+                &.disabled {
+                    pointer-events: none;
+                    .bttn.pink {
+                        background: $disabledGrey;
+                        border-color: $disabledGrey;
+                    }
+                }
+            }
+        }
+    }
+}

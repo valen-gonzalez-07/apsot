@@ -1,0 +1,82 @@
+@use '../globals/variables' as *;
+
+
+.cartilla-categoria {
+    .cartilla-busqueda {
+        .title-col {
+            h3 {
+                font-weight: $fontBold;
+                font-size: 16px;
+                margin: 0 0 25px;
+                color: $pink;
+                i {
+                    font-size: 18px;
+                }
+                a {
+                    font: unset;
+                    text-decoration: none;
+                    color: inherit;
+                    display: inline-flex;
+                    gap: 12px;
+                    align-items: center;
+                }
+            }
+        }
+        .filtros-col {
+            .filtros-wrapper {
+                gap: 16px;
+                margin-bottom: 47px;
+                h3 {
+                    font-size: 14px;
+                    color: $blue;
+                }
+                .bttn {
+                    margin: 9px auto 0;
+                }
+                .dropdown {
+                    .header {
+                        justify-content: flex-start;
+                        gap: 7px;
+                        i:not(.icon-arrow-down) {
+                            font-size: 24px;
+                        }
+                        span {
+                            flex: 0 1 calc(100% - 50px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .cartilla-categoria {
+        .cartilla-busqueda {
+            .title-col {
+                h3 {
+                    a:hover {
+                        color: $lightPink;
+                    }
+                }
+            }
+            .filtros-col {
+                .filtros-wrapper {
+                    flex-wrap: wrap;
+                    gap: 15px 25px;
+                    margin-bottom: 300px;
+                    h3 {
+                        flex: 0 1 100%;
+                    }
+                    .dropdown {
+                        flex: 0 1 392px;
+                    }
+                    .bttn {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

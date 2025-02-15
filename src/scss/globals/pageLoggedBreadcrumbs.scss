@@ -1,0 +1,43 @@
+@use 'variables' as *;
+
+.page-logged-breadcrumbs {
+    padding: 23px 0;
+    .links-box {
+        @include flex();
+        align-items: flex-start;
+        span {
+            color: $grey;
+            font-weight: $fontMedium;
+            font-size: 10px;
+            line-height: 1.2em;
+            display: inline-block;
+            &:not(:last-of-type)::after {
+                content: '>';
+                margin: 0 2px;
+            }
+            a {
+                color: $grey;
+                text-decoration: none;
+            }
+            .active {
+                color: $lightBlue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .page-logged-breadcrumbs {
+        padding: 49px 0;
+        .links-box {
+            span {
+                font-size: 12px;
+                &:not(:last-of-type)::after {
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}

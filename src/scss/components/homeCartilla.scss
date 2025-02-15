@@ -1,0 +1,88 @@
+@use '../globals/variables' as *;
+
+.home-cartilla {
+    padding-block: 35px;
+    text-align: center;
+    .text-col {
+        h3 {
+            margin: 0 0 12px;
+            color: $pink;
+        }
+        h2 {
+            color: $blue;
+        }
+    }
+    .boxes-col { 
+        .boxes {
+            @include flex();
+            align-items: flex-start;
+            gap: 35px;
+            margin-top: 30px;
+            .box {
+                flex: 0 1 100%;
+                padding-inline: 20px;
+                .image-box {
+                    width: 100px;
+                    height: 100px;
+                    padding: 20px;
+                    border-radius: 100%;
+                    box-shadow: 0px 5px 18px #1F084614;
+                    background: $white;
+                    margin: 0 auto 24px;
+                    img {
+                        object-fit: contain;
+                    }
+                }
+                h4 {
+                    font-size: 19px;
+                    line-height: 1.31em;
+                    margin: 0 0 14px;
+                    color: $blue;
+                }
+                p {
+                    color: $grey;
+                }
+            }
+        }
+        .bttn {
+            margin: 35px auto 0;
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .home-cartilla {
+        padding-block: 50px 60px;
+        .text-col {
+            h3 {
+                margin: 0 0 16px;
+            }
+        }
+        .boxes-col {
+            .boxes {
+                margin-top: 60px;
+                gap: 40px;
+                .box {
+                    flex: 0 1 calc(33% - 25px);
+                    padding-inline: 0;
+                    .image-box {
+                        width: 120px;
+                        height: 120px;
+                    }
+                    h4 {
+                        font-size: 21px;
+                        line-height: 1.19em;
+                        margin: 0 0 20px;
+                    }
+                    p {
+                        padding-inline: 10px;
+                    }
+                }
+            }
+            .bttn {
+                margin: 45px auto 0;
+            }
+        }
+    }
+}

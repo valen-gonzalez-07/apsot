@@ -1,0 +1,426 @@
+@use '../globals/variables' as *;
+
+
+.chequeo-reserva {
+    color: $grey;
+    .title-col {
+        margin-bottom: 34px;
+        h2 {
+            color: $blue;
+            margin: 0 0 22px;
+        }
+        p {
+            line-height: 1.21em;
+            max-width: 247px;
+        }
+    }
+    .dropdown-col {
+        margin-bottom: 37px;
+        .dropdown {
+            width: 100%;
+            position: relative;
+            .header {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 17px 15px;
+                border: 1px solid $lightBorderGrey;
+                border-radius: 10px;
+                background: $white;
+                @include transition($delay);
+                span {
+                    font-size: 13px;
+                    line-height: 1.2em;
+                }
+                i {
+                    font-size: 7px;
+                }
+            }
+            ul {
+                position: absolute;
+                z-index: 2;
+                top: calc(100% - 2px);
+                left: 0;
+                right: 0;
+                background: $white;
+                padding: 0 12px 0 15px;
+                border: 1px solid $grey;
+                border-top-color: $white;
+                border-radius: 0 0 10px 10px;
+                @include transition($delay);
+                opacity: 0;
+                pointer-events: none;
+                max-height: 125px;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                &::-webkit-scrollbar {
+                    width: 14px;
+                    background: #31619533; 
+                    border-radius: 20px;
+                }
+                &::-webkit-scrollbar-track {
+                    border-radius: 20px;
+                    border: 2px solid transparent;
+                    background-clip: content-box;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: $blue; 
+                    border-radius: 20px;
+                    border: 2px solid transparent; 
+                    background-clip: content-box;
+                }
+                li {
+                    list-style: none;
+                    font-size: 13px;
+                    line-height: 1.2em;
+                    margin: 12px 0;
+                    &:last-of-type {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &.selected {
+                .header {
+                    color: $darkGrey;
+                    span {
+                        font-weight: $fontSemiBold;
+                    }
+                }
+            }
+            &.opened {
+                .header {
+                    border-radius: 10px 10px 0 0;
+                    border-color: $grey;
+                    i {
+                        scale: -1;
+                        margin-bottom: 5px;
+                    }
+                }
+                ul {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+    .centro-seleccionado-col {
+        margin-bottom: 24px;
+        .fechas-centro {
+            .text {
+                text-align: center;
+                margin-bottom: 24px;
+                p {
+                    font-size: 15px;
+                    line-height: 1.21em;
+                    &.centro-seleccionado {
+                        font-weight: $fontSemiBold;
+                    }
+                }
+            }
+            .dates-box {
+                margin-bottom: 45px;
+                .dates-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $blue;
+                    gap: 22.5px;
+                    margin-bottom: 20px;
+                    p {
+                        font-weight: $fontBold;
+                        font-size: 18px;
+                        line-height: 1.21em;
+                    }
+                    button {
+                        color: $blue;
+                        i {
+                            font-size: 20px;
+                        }
+                        &.next {
+                            scale: -1;
+                            i::before {
+                                content: "\e916";
+                            }
+                        }
+                    }
+                }
+                .dates-content {
+                    max-height: 303px;
+                    overflow-y: scroll;
+                    padding-right: 20px;
+                    &::-webkit-scrollbar {
+                        width: 14px;
+                        background: #31619533; 
+                        border-radius: 20px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        border-radius: 20px;
+                        border: 2px solid transparent;
+                        background-clip: content-box;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background: $blue; 
+                        border-radius: 20px;
+                        border: 2px solid transparent; 
+                        background-clip: content-box;
+                    }
+                    .date {
+                        padding: 15px 0;
+                        &:not(:first-of-type) {
+                            border-top: 1px solid $grey;
+                        }
+                        &:is(:first-of-type) {
+                            padding-top: 0;
+                        }
+                        .open-hours {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 10px;
+                            :is(p, span) {
+                                font-size: 13px;
+                                line-height: 1.21em;
+                                color: $darkGrey;
+                                @include transition($delay);
+                            }
+                            span {
+                                position: relative;
+                                margin-right: 15px;
+                                text-decoration: underline;
+                                i {
+                                    font-size: 6px;
+                                    position: absolute;
+                                    right: -15px;
+                                    top: 50%;
+                                    transform: translate(0, -50%);
+                                }
+                            }
+                        }
+                        .hours {
+                            @include flex();
+                            @include transition($delay);
+                            gap: 10px;
+                            max-height: 0;
+                            opacity: 0;
+                            pointer-events: none;
+                            button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 67px;
+                                height: 31px;
+                                border: 1px solid $hoursBorderGrey;
+                                border-radius: 5px;
+                                color: $darkGrey;
+                                font-size: 14px;
+                                line-height: 1.21em;
+                                @include transition($delay);
+                                &.active {
+                                    color: $white;
+                                    border-color: $blue;
+                                    background-color: $blue;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        &.opened {
+                            :is(p, span) {
+                                font-weight: $fontSemiBold;
+                                color: $blue;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                            span {
+                                font-size: 14px;
+                                i {
+                                    scale: -1;
+                                    transform-origin: top;
+                                }
+                            }
+                            .hours {
+                                max-height: fit-content;
+                                opacity: 1;
+                                pointer-events: all;
+                                margin-top: 22px;
+                            }
+                        }
+                    }
+                }
+                .bttn {
+                    margin-top: 25px;
+                    cursor: pointer;
+                    &:disabled {
+                        background-color: $grey;
+                        border-color: $grey;
+                        pointer-events: none;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .info-centro {
+            .box {
+                background: $white;
+                box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+                padding: 25px 25px 20px;
+                border-radius: 15px;
+                h3 {
+                    color: $blue;
+                    margin: 0 0 20px;
+                }
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-size: 12px;
+                    line-height: 1.21em;
+                    margin: 0 0 18px;
+                    i {
+                        font-size: 18px;
+                    }
+                    &.warning {
+                        font-weight: $fontSemiBold;
+                        color: $darkGrey;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    color: $grey;
+                }
+                .link-box {
+                    margin-top: 6px;
+                    padding-top: 18px;
+                    border-top: .5px solid $blue;
+                    text-align: right;
+                    a {
+                        position: relative;
+                        margin-right: 25px;
+                        color: $pink;
+                        font-weight: $fontSemiBold;
+                        font-size: 14px;
+                        i {
+                            font-size: 20px;
+                            position: absolute;
+                            right: -25px;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            @include transition($delay);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and
+(min-width: 961px) {
+    .chequeo-reserva {
+        .row.top {
+            position: relative;
+        }
+        .title-col {
+            margin-bottom: 45px;
+            h2 {
+                margin: 0 0 16px;
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+        .dropdown-col {
+            .dropdown {
+                max-width: 340px;
+                cursor: pointer;
+                li{
+                    @include transition($delay);
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .centro-seleccionado-col {
+            margin-top: -70px;
+            position: static;
+            .fechas-centro {
+                .text {
+                    text-align: left;
+                    margin-bottom: 30px;
+                    p {
+                        font-size: 16px;
+                        &:not(.centro-seleccionado) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .dates-box {
+                    .dates-header {
+                        button {
+                            cursor: pointer;
+                            &:hover {
+                                color: $lightBlue;
+                            }
+                        }
+                    }
+                    .dates-content {
+                        .date {
+                            padding: 22px 0;
+                            .open-hours {
+                                cursor: pointer;
+                                p {
+                                    font-size: 16px;
+                                }
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                            .hours {
+                                button {
+                                    cursor: pointer;
+                                    &:hover {
+                                        border-color: $blue;
+                                    }
+                                }
+                            }
+                            &.opened {
+                                p {
+                                    color: $darkGrey;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .info-centro {
+                position: absolute;
+                max-width: 367px;
+                left: 10px;
+                top: 115px;
+                .box {
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.21em;
+                        margin: 0 0 18px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    .link-box {
+                        margin-top: 0;
+                        &:hover {
+                            i {
+                                right: -27px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
