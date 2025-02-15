@@ -1,0 +1,422 @@
+.mi-perfil-header .title-box {
+  margin-bottom: 25px;
+}
+.mi-perfil-header .title-box h1 {
+  color: #005096;
+  font-weight: 800;
+  font-size: 25px;
+  margin: 0 0 20px;
+}
+.mi-perfil-header .title-box h2 {
+  color: #008FC5;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.46em;
+}
+.mi-perfil-header .datos-box {
+  color: #383838;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px rgba(31, 8, 70, 0.0784313725);
+  border-radius: 17px;
+  padding: 25px 25px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.mi-perfil-header .datos-box .dato span {
+  display: block;
+  color: #005096;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21em;
+  margin: 0 0 15px;
+}
+.mi-perfil-header .datos-box .dato p {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.16em;
+}
+.mi-perfil-header .contact-box {
+  margin-bottom: 30px;
+}
+.mi-perfil-header .contact-box h3 {
+  color: #005096;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.12em;
+  margin: 0 0 25px;
+}
+.mi-perfil-header .contact-box .contact span {
+  color: #005096;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21em;
+  display: block;
+  margin: 0 0 15px;
+}
+.mi-perfil-header .contact-box .contact .input-wrapper {
+  position: relative;
+}
+.mi-perfil-header .contact-box .contact .input-wrapper input {
+  padding: 17px 20px;
+  border-radius: 10px;
+  border: 1px solid #ABABAB;
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.23em;
+  color: #383838;
+  padding-right: 70px;
+  width: 100%;
+}
+.mi-perfil-header .contact-box .contact .input-wrapper input:focus {
+  outline-color: #005096;
+}
+.mi-perfil-header .contact-box .contact .input-wrapper button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  font-weight: 600;
+  font-size: 13px;
+  color: #005096;
+  text-decoration: underline;
+  pointer-events: none;
+}
+.mi-perfil-header .contact-box .contact:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.mi-perfil-header .contact-box .bttn {
+  margin: 30px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  .mi-perfil-header .datos-box {
+    margin: 0 20px 35px;
+  }
+  .mi-perfil-header .datos-box .dato {
+    flex: 0 1 100%;
+  }
+  .mi-perfil-header .datos-box :is(.nombre, .apellido) {
+    flex: 0 1 calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 961px) {
+  .mi-perfil-header .title-box {
+    margin-bottom: 35px;
+  }
+  .mi-perfil-header .title-box h1 {
+    font-size: 40px;
+    margin: 0 0 15px;
+  }
+  .mi-perfil-header .title-box h2 {
+    font-size: 18px;
+  }
+  .mi-perfil-header .datos-box {
+    margin: 0 0 40px;
+    padding: 25px 30px;
+    gap: 25px 93px;
+  }
+  .mi-perfil-header .datos-box .dato {
+    flex: 0 1 auto;
+  }
+  .mi-perfil-header .datos-box .dato span {
+    font-size: 16px;
+  }
+  .mi-perfil-header .datos-box .dato p {
+    font-size: 20px;
+  }
+  .mi-perfil-header .contact-box {
+    margin-bottom: 40px;
+  }
+  .mi-perfil-header .contact-box h3 {
+    font-size: 25px;
+    margin: 0 0 33px;
+  }
+  .mi-perfil-header .contact-box .contact:not(:last-of-type) {
+    margin: 0 0 23px;
+  }
+  .mi-perfil-header .contact-box .contact span {
+    font-size: 16px;
+    margin: 0 0 12px;
+  }
+  .mi-perfil-header .contact-box .bttn {
+    margin: 30px 0 0;
+  }
+}
+.mi-perfil-turnos {
+  padding-block: 30px;
+  background: #F2F2F2;
+  color: #005096;
+  text-align: center;
+}
+.mi-perfil-turnos .content-box h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.21em;
+  margin: 0 0 20px;
+}
+.mi-perfil-turnos .content-box .disclaimer-box {
+  padding: 22px 26px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px rgba(31, 8, 70, 0.0784313725);
+  border-radius: 17px;
+}
+.mi-perfil-turnos .content-box .disclaimer-box h3 {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.54em;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+}
+.mi-perfil-turnos .content-box .disclaimer-box p {
+  color: #6E6E6E;
+}
+.mi-perfil-turnos .content-box .disclaimer-box .bttn {
+  margin: 15px auto 0;
+}
+
+@media screen and (min-width: 961px) {
+  .mi-perfil-turnos {
+    padding-block: 40px;
+    text-align: left;
+  }
+  .mi-perfil-turnos .content-box h2 {
+    font-size: 25px;
+    margin: 0 0 35px;
+  }
+  .mi-perfil-turnos .content-box .disclaimer-box {
+    padding: 25px;
+    position: relative;
+  }
+  .mi-perfil-turnos .content-box .disclaimer-box h3 {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  .mi-perfil-turnos .content-box .disclaimer-box :is(h3, p) {
+    padding-right: 215px;
+  }
+  .mi-perfil-turnos .content-box .disclaimer-box .bttn {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0, -50%);
+    margin: 0;
+  }
+}
+.mi-perfil-grupo-familiar {
+  padding-block: 37px 50px;
+}
+.mi-perfil-grupo-familiar .title-box {
+  color: #6E6E6E;
+  margin-bottom: 31px;
+}
+.mi-perfil-grupo-familiar .title-box h2 {
+  color: #005096;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+.mi-perfil-grupo-familiar .title-box h3 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.46em;
+}
+.mi-perfil-grupo-familiar .familiar-box {
+  color: #383838;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px rgba(31, 8, 70, 0.0784313725);
+  border-radius: 17px;
+  padding: 25px;
+  --heigthEditor: 375px;
+}
+.mi-perfil-grupo-familiar .familiar-box .header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #D3D1D1;
+}
+.mi-perfil-grupo-familiar .familiar-box .header-box h4 {
+  color: #008FC5;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2em;
+  font-size: 15px;
+}
+.mi-perfil-grupo-familiar .familiar-box .header-box button {
+  position: relative;
+  margin-right: 23px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: underline;
+  color: #005096;
+}
+.mi-perfil-grupo-familiar .familiar-box .header-box button i {
+  font-size: 8px;
+  position: absolute;
+  right: -23px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.mi-perfil-grupo-familiar .familiar-box .datos-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+.mi-perfil-grupo-familiar .familiar-box .datos-box .dato span {
+  display: block;
+  color: #005096;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.21em;
+  margin: 0 0 15px;
+}
+.mi-perfil-grupo-familiar .familiar-box .datos-box .dato p {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact span {
+  color: #005096;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21em;
+  display: block;
+  margin: 0 0 15px;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact .input-wrapper {
+  position: relative;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact .input-wrapper input {
+  padding: 17px 20px;
+  border-radius: 10px;
+  border: 1px solid #ABABAB;
+  background: #FFFFFF;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.23em;
+  color: #383838;
+  padding-right: 70px;
+  width: 100%;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact .input-wrapper input:focus {
+  outline-color: #005096;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact .input-wrapper button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  font-weight: 600;
+  font-size: 13px;
+  color: #005096;
+  text-decoration: underline;
+  pointer-events: none;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .contact:first-of-type {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 0;
+}
+.mi-perfil-grupo-familiar .familiar-box .contact-box .bttn {
+  margin: 30px auto 0;
+}
+.mi-perfil-grupo-familiar .familiar-box.opened .header-box button i {
+  scale: -1;
+  transform-origin: top;
+}
+.mi-perfil-grupo-familiar .familiar-box.opened .contact-box {
+  opacity: 1;
+  pointer-events: all;
+  max-height: var(--heigthEditor);
+  margin-top: 29px;
+}
+.mi-perfil-grupo-familiar .familiar-box:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .mi-perfil-grupo-familiar .familiar-box {
+    margin-inline: 20px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .datos-box .dato {
+    flex: 0 1 100%;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .datos-box :is(.nombre, .apellido) {
+    flex: 0 1 calc(50% - 15px);
+  }
+  .mi-perfil-grupo-familiar.opened .header-box button i {
+    scale: -1;
+    transform-origin: top;
+  }
+}
+@media screen and (min-width: 961px) {
+  .mi-perfil-grupo-familiar {
+    padding-block: 40px 60px;
+  }
+  .mi-perfil-grupo-familiar .title-box {
+    margin-bottom: 40px;
+  }
+  .mi-perfil-grupo-familiar .title-box h2 {
+    font-size: 25px;
+  }
+  .mi-perfil-grupo-familiar .title-box h3 {
+    font-size: 18px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .header-box {
+    cursor: pointer;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .header-box h4 {
+    font-size: 20px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .datos-box {
+    gap: 25px 93px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .datos-box .dato {
+    flex: 0 1 auto;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .contact-box {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px 25px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .contact-box .contact {
+    flex: 0 1 calc(50% - 15px);
+  }
+  .mi-perfil-grupo-familiar .familiar-box .contact-box .contact:not(:last-of-type) {
+    margin: 0;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .contact-box .contact span {
+    font-size: 16px;
+  }
+  .mi-perfil-grupo-familiar .familiar-box .contact-box .bttn {
+    margin: auto 0 0 auto;
+  }
+  .mi-perfil-grupo-familiar .familiar-box.opened .contact-box {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=miPerfil.css.map */

@@ -1,0 +1,423 @@
+.chequeo-reserva {
+  color: #6E6E6E;
+}
+.chequeo-reserva .title-col {
+  margin-bottom: 34px;
+}
+.chequeo-reserva .title-col h2 {
+  color: #005096;
+  margin: 0 0 22px;
+}
+.chequeo-reserva .title-col p {
+  line-height: 1.21em;
+  max-width: 247px;
+}
+.chequeo-reserva .dropdown-col {
+  margin-bottom: 37px;
+}
+.chequeo-reserva .dropdown-col .dropdown {
+  width: 100%;
+  position: relative;
+}
+.chequeo-reserva .dropdown-col .dropdown .header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 15px;
+  border: 1px solid #ABABAB;
+  border-radius: 10px;
+  background: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.chequeo-reserva .dropdown-col .dropdown .header span {
+  font-size: 13px;
+  line-height: 1.2em;
+}
+.chequeo-reserva .dropdown-col .dropdown .header i {
+  font-size: 7px;
+}
+.chequeo-reserva .dropdown-col .dropdown ul {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% - 2px);
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  padding: 0 12px 0 15px;
+  border: 1px solid #6E6E6E;
+  border-top-color: #FFFFFF;
+  border-radius: 0 0 10px 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 125px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.chequeo-reserva .dropdown-col .dropdown ul::-webkit-scrollbar {
+  width: 14px;
+  background: rgba(49, 97, 149, 0.2);
+  border-radius: 20px;
+}
+.chequeo-reserva .dropdown-col .dropdown ul::-webkit-scrollbar-track {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.chequeo-reserva .dropdown-col .dropdown ul::-webkit-scrollbar-thumb {
+  background: #005096;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.chequeo-reserva .dropdown-col .dropdown ul li {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.2em;
+  margin: 12px 0;
+}
+.chequeo-reserva .dropdown-col .dropdown ul li:last-of-type {
+  margin-bottom: 15px;
+}
+.chequeo-reserva .dropdown-col .dropdown.selected .header {
+  color: #383838;
+}
+.chequeo-reserva .dropdown-col .dropdown.selected .header span {
+  font-weight: 600;
+}
+.chequeo-reserva .dropdown-col .dropdown.opened .header {
+  border-radius: 10px 10px 0 0;
+  border-color: #6E6E6E;
+}
+.chequeo-reserva .dropdown-col .dropdown.opened .header i {
+  scale: -1;
+  margin-bottom: 5px;
+}
+.chequeo-reserva .dropdown-col .dropdown.opened ul {
+  opacity: 1;
+  pointer-events: all;
+}
+.chequeo-reserva .centro-seleccionado-col {
+  margin-bottom: 24px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .text {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .text p {
+  font-size: 15px;
+  line-height: 1.21em;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .text p.centro-seleccionado {
+  font-weight: 600;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box {
+  margin-bottom: 45px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #005096;
+  gap: 22.5px;
+  margin-bottom: 20px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.21em;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button {
+  color: #005096;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button i {
+  font-size: 20px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button.next {
+  scale: -1;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button.next i::before {
+  content: "\e916";
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content {
+  max-height: 303px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content::-webkit-scrollbar {
+  width: 14px;
+  background: rgba(49, 97, 149, 0.2);
+  border-radius: 20px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content::-webkit-scrollbar-track {
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content::-webkit-scrollbar-thumb {
+  background: #005096;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date {
+  padding: 15px 0;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date:not(:first-of-type) {
+  border-top: 1px solid #6E6E6E;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date:is(:first-of-type) {
+  padding-top: 0;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours :is(p, span) {
+  font-size: 13px;
+  line-height: 1.21em;
+  color: #383838;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours span {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: underline;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours span i {
+  font-size: 6px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .hours {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  gap: 10px;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .hours button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 31px;
+  border: 1px solid #CFCFCF;
+  border-radius: 5px;
+  color: #383838;
+  font-size: 14px;
+  line-height: 1.21em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .hours button.active {
+  color: #FFFFFF;
+  border-color: #005096;
+  background-color: #005096;
+  font-weight: 600;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened :is(p, span) {
+  font-weight: 600;
+  color: #005096;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened p {
+  font-size: 16px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened span {
+  font-size: 14px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened span i {
+  scale: -1;
+  transform-origin: top;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened .hours {
+  max-height: fit-content;
+  opacity: 1;
+  pointer-events: all;
+  margin-top: 22px;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .bttn {
+  margin-top: 25px;
+  cursor: pointer;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .bttn:disabled {
+  background-color: #6E6E6E;
+  border-color: #6E6E6E;
+  pointer-events: none;
+}
+.chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .bttn:disabled:hover {
+  color: #FFFFFF;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+  padding: 25px 25px 20px;
+  border-radius: 15px;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box h3 {
+  color: #005096;
+  margin: 0 0 20px;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.21em;
+  margin: 0 0 18px;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box p i {
+  font-size: 18px;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box p.warning {
+  font-weight: 600;
+  color: #383838;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box a {
+  text-decoration: none;
+  color: #6E6E6E;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box .link-box {
+  margin-top: 6px;
+  padding-top: 18px;
+  border-top: 0.5px solid #005096;
+  text-align: right;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box .link-box a {
+  position: relative;
+  margin-right: 25px;
+  color: #E20178;
+  font-weight: 600;
+  font-size: 14px;
+}
+.chequeo-reserva .centro-seleccionado-col .info-centro .box .link-box a i {
+  font-size: 20px;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 961px) {
+  .chequeo-reserva .row.top {
+    position: relative;
+  }
+  .chequeo-reserva .title-col {
+    margin-bottom: 45px;
+  }
+  .chequeo-reserva .title-col h2 {
+    margin: 0 0 16px;
+  }
+  .chequeo-reserva .title-col p {
+    max-width: 100%;
+  }
+  .chequeo-reserva .dropdown-col .dropdown {
+    max-width: 340px;
+    cursor: pointer;
+  }
+  .chequeo-reserva .dropdown-col .dropdown li {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .chequeo-reserva .dropdown-col .dropdown li:hover {
+    color: #005096;
+  }
+  .chequeo-reserva .centro-seleccionado-col {
+    margin-top: -70px;
+    position: static;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .text {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .text p {
+    font-size: 16px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .text p:not(.centro-seleccionado) {
+    margin-bottom: 10px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button {
+    cursor: pointer;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-header button:hover {
+    color: #008FC5;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date {
+    padding: 22px 0;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours {
+    cursor: pointer;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours p {
+    font-size: 16px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .open-hours span {
+    font-size: 14px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .hours button {
+    cursor: pointer;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date .hours button:hover {
+    border-color: #005096;
+  }
+  .chequeo-reserva .centro-seleccionado-col .fechas-centro .dates-box .dates-content .date.opened p {
+    color: #383838;
+  }
+  .chequeo-reserva .centro-seleccionado-col .info-centro {
+    position: absolute;
+    max-width: 367px;
+    left: 10px;
+    top: 115px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .info-centro .box h3 {
+    font-size: 16px;
+    line-height: 1.21em;
+    margin: 0 0 18px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .info-centro .box p {
+    font-size: 14px;
+  }
+  .chequeo-reserva .centro-seleccionado-col .info-centro .box .link-box {
+    margin-top: 0;
+  }
+  .chequeo-reserva .centro-seleccionado-col .info-centro .box .link-box:hover i {
+    right: -27px;
+  }
+}
+
+/*# sourceMappingURL=chequeoReserva.css.map */

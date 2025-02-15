@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../../../public/css/icomoon/icomoon.eot?2k0c8j");
+  src: url("../../../public/css/icomoon/icomoon.eot?2k0c8j#iefix") format("embedded-opentype"), url("../../../public/css/icomoon/icomoon.ttf?2k0c8j") format("truetype"), url("../../../public/css/icomoon/icomoon.woff?2k0c8j") format("woff"), url("../../../public/css/icomoon/icomoon.svg?2k0c8j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-emergency:before {
+  content: "\e91d";
+}
+
+.icon-vacunatorios:before {
+  content: "\e925";
+}
+
+.icon-ortopedias:before {
+  content: "\e926";
+}
+
+.icon-opticas:before {
+  content: "\e927";
+}
+
+.icon-pills:before {
+  content: "\e928";
+}
+
+.icon-farmacias:before {
+  content: "\e929";
+}
+
+.icon-guardias:before {
+  content: "\e92a";
+}
+
+.icon-doctor:before {
+  content: "\e92b";
+}
+
+.icon-location:before {
+  content: "\e92c";
+}
+
+.icon-check:before {
+  content: "\e923";
+}
+
+.icon-download:before {
+  content: "\e924";
+}
+
+.icon-cartilla:before {
+  content: "\e915";
+}
+
+.icon-arrow-left:before {
+  content: "\e916";
+}
+
+.icon-arrow-right-outlined-lg:before {
+  content: "\e917";
+}
+
+.icon-autorizaciones:before {
+  content: "\e918";
+}
+
+.icon-chequeo:before {
+  content: "\e919";
+}
+
+.icon-credencial:before {
+  content: "\e91a";
+}
+
+.icon-faqs:before {
+  content: "\e91b";
+}
+
+.icon-home:before {
+  content: "\e91c";
+}
+
+.icon-phone:before {
+  content: "\e91e";
+}
+
+.icon-reintegros:before {
+  content: "\e91f";
+}
+
+.icon-urgencias:before {
+  content: "\e920";
+}
+
+.icon-warning:before {
+  content: "\e921";
+}
+
+.icon-user:before {
+  content: "\e922";
+}
+
+.icon-arrow-down:before {
+  content: "\e911";
+}
+
+.icon-search:before {
+  content: "\e912";
+}
+
+.icon-facebook-filled:before {
+  content: "\e913";
+}
+
+.icon-arrow-right:before {
+  content: "\e914";
+}
+
+.icon-mail-outlined:before {
+  content: "\e900";
+}
+
+.icon-location-outlined:before {
+  content: "\e901";
+}
+
+.icon-phone-outlined:before {
+  content: "\e902";
+}
+
+.icon-youtube-filled:before {
+  content: "\e903";
+}
+
+.icon-instagram-filled:before {
+  content: "\e904";
+}
+
+.icon-linkedin-filled:before {
+  content: "\e905";
+}
+
+.icon-whatsapp-outlined:before {
+  content: "\e906";
+}
+
+.icon-youtube-outlined:before {
+  content: "\e907";
+}
+
+.icon-facebook-outlined:before {
+  content: "\e908";
+}
+
+.icon-instagram-outlined:before {
+  content: "\e909";
+}
+
+.icon-linkedin-outlined:before {
+  content: "\e90a";
+}
+
+.icon-close:before {
+  content: "\e90b";
+}
+
+.icon-usuarios:before {
+  content: "\e90c";
+}
+
+.icon-prestadores:before {
+  content: "\e90d";
+}
+
+.icon-menu:before {
+  content: "\e90e";
+}
+
+.icon-user-outlined:before {
+  content: "\e90f";
+}
+
+.icon-emergency-outlined:before {
+  content: "\e910";
+}
+
+/*# sourceMappingURL=iconos.css.map */

@@ -1,0 +1,42 @@
+.page-logged-breadcrumbs {
+  padding: 23px 0;
+}
+.page-logged-breadcrumbs .links-box {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.page-logged-breadcrumbs .links-box span {
+  color: #6E6E6E;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2em;
+  display: inline-block;
+}
+.page-logged-breadcrumbs .links-box span:not(:last-of-type)::after {
+  content: ">";
+  margin: 0 2px;
+}
+.page-logged-breadcrumbs .links-box span a {
+  color: #6E6E6E;
+  text-decoration: none;
+}
+.page-logged-breadcrumbs .links-box span .active {
+  color: #008FC5;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 961px) {
+  .page-logged-breadcrumbs {
+    padding: 49px 0;
+  }
+  .page-logged-breadcrumbs .links-box span {
+    font-size: 12px;
+  }
+  .page-logged-breadcrumbs .links-box span:not(:last-of-type)::after {
+    margin: 0 3px;
+  }
+}
+
+/*# sourceMappingURL=pageLoggedBreadcrumbs.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../src/scss/components/beneficiarioLogged.scss","../../../src/scss/globals/_variables.scss"],"names":[],"mappings":"AAEA;EACI;;;AAGJ;EAEI;IACI;;;AAUQ;EACI;;AACA;EACI,OCIT;;ADFK;EACI,YCCT;EDAS;;;AAgBR;EACI;EACA,OClBL;;ADmBK;EACI,OCpBT;;;AD4Bf;EAIY;IACI;;;AAcA;EACI;;AACA;EACI,YClDT;EDmDS,cCnDT","file":"beneficiarioLogged.css"}

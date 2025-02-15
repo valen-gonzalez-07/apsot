@@ -1,0 +1,119 @@
+.lateral-navigation {
+  position: relative;
+  bottom: 0;
+  padding: 10px 30px 15px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 8px 0px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.lateral-navigation .content-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+.lateral-navigation .content-box a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #6E6E6E;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.21em;
+  text-align: center;
+}
+.lateral-navigation .content-box a i {
+  font-size: 22px;
+}
+.lateral-navigation .content-box a::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #FFFFFF;
+}
+.lateral-navigation .content-box a.active {
+  color: #008FC5;
+}
+.lateral-navigation .content-box a.active::after {
+  background: #008FC5;
+}
+.lateral-navigation .content-box a.home-servicios {
+  text-transform: uppercase;
+  color: #005096;
+}
+
+.lateral-navigation.is-fixed {
+  position: fixed;
+}
+
+@media screen and (max-width: 960px) {
+  .lateral-navigation.is-fixed {
+    top: calc(100vh - 65px);
+    top: calc(100svh - 65px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+}
+@media screen and (min-width: 961px) {
+  .lateral-navigation + .site-footer {
+    margin-top: -15px;
+  }
+  .lateral-navigation + .site-footer,
+  .lateral-navigation + .site-footer + .copyright {
+    position: relative;
+    z-index: 1;
+  }
+  .lateral-navigation {
+    max-width: 291px;
+    padding: 15px 6px 134px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0px -1px 18px 0 rgba(31, 8, 70, 0.1);
+  }
+  .lateral-navigation .content-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lateral-navigation .content-box a {
+    width: -webkit-fill-available;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 15px 22.5px;
+    gap: 10px;
+    border-radius: 9px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .lateral-navigation .content-box a::after {
+    content: none;
+  }
+  .lateral-navigation .content-box a.active {
+    color: #FFFFFF;
+    background-color: #008FC5;
+  }
+  .lateral-navigation .content-box a:not(.active, .home-servicios):hover {
+    color: #FFFFFF;
+    background-color: #008FC5;
+  }
+  .lateral-navigation .content-box a.cartilla {
+    order: -1;
+  }
+  .lateral-navigation.is-fixed {
+    top: 120px;
+    min-height: 100vh;
+    padding-bottom: var(--heightFooter);
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=siteLateralNavigation.css.map */

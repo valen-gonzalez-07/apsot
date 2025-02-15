@@ -1,0 +1,185 @@
+.site-footer {
+  background: linear-gradient(165deg, #005096 0%, #024A88 100%);
+  color: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px 20px 0px 0px;
+  padding-block: 50px 30px;
+}
+.site-footer ul {
+  list-style: none;
+}
+.site-footer a {
+  color: #FFFFFF;
+  display: inline-block;
+}
+.site-footer .menus-col .column {
+  padding-inline: 30px;
+}
+.site-footer .menus-col .column:not(.first-column) {
+  margin-top: 50px;
+}
+.site-footer .menus-col .column:not(.first-column) a {
+  text-decoration: none;
+  color: #FBFBFB;
+}
+.site-footer .menus-col .column:not(.first-column) ul li {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+.site-footer .menus-col .column:not(.first-column) ul li:not(:last-of-type) {
+  margin: 0 0 16px;
+}
+.site-footer .menus-col .column > p {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  margin: 0 0 28px;
+}
+.site-footer .menus-col .first-column .logo {
+  display: inline-block;
+  width: 152px;
+  height: auto;
+  margin: 0 0 30px;
+}
+.site-footer .menus-col .first-column .logo img {
+  width: 100%;
+}
+.site-footer .menus-col .first-column ul li:not(:last-of-type) {
+  margin: 0 0 10px;
+}
+.site-footer .menus-col .first-column .social {
+  margin: 40px 0 0;
+}
+.site-footer .menus-col .first-column .social p {
+  line-height: 1.61em;
+  margin: 0 0 22px;
+  color: #FBFBFB;
+}
+.site-footer .menus-col .first-column .social .links {
+  display: flex;
+  gap: 20px;
+}
+.site-footer .menus-col .first-column .social .links a {
+  text-decoration: none;
+  font-size: 35px;
+}
+.site-footer .menus-col .last-column .contact {
+  margin-top: 27px;
+  color: #FBFBFB;
+}
+.site-footer .menus-col .last-column .contact p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0 0 19px;
+}
+.site-footer .menus-col .last-column .contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.15em;
+}
+.site-footer .menus-col .last-column .contact a i {
+  font-size: 17px;
+}
+.site-footer .menus-col .last-column .contact a:not(:last-of-type) {
+  margin: 0 0 10px;
+}
+
+@media screen and (min-width: 961px) {
+  .site-footer {
+    padding-block: 40px;
+    background: linear-gradient(103deg, #005096 0%, #024A88 100%);
+  }
+  .site-footer .menus-col {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .site-footer .menus-col .column {
+    padding-inline: 0;
+  }
+  .site-footer .menus-col .column a:hover {
+    color: #5ED3FF;
+  }
+  .site-footer .menus-col .column > p {
+    margin: 0 0 30px;
+  }
+  .site-footer .menus-col .column:not(.first-column) {
+    margin-top: 0;
+  }
+  .site-footer .menus-col .column:not(.first-column) ul li {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  .site-footer .menus-col .column:not(.first-column) ul li:not(:last-of-type) {
+    margin: 0 0 13px;
+  }
+  .site-footer .menus-col .first-column .logo {
+    width: 167px;
+  }
+  .site-footer .menus-col .first-column li {
+    font-size: 13px;
+  }
+  .site-footer .menus-col .first-column .social {
+    margin-top: 60px;
+  }
+  .site-footer .menus-col .first-column .social p {
+    font-size: 13px;
+  }
+  .site-footer .menus-col .first-column .social a:hover {
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .site-footer .menus-col .last-column .contact {
+    margin-top: 30px;
+  }
+  .site-footer .menus-col .last-column .contact p {
+    font-size: 13px;
+    line-height: 1.15em;
+  }
+}
+.copyright {
+  background: #FFFFFF;
+  color: #6E6E6E;
+  padding-block: 30px 23px;
+}
+.copyright .text-col p {
+  font-size: 13px;
+  line-height: 1.61em;
+}
+.copyright .text-col p a {
+  color: #6E6E6E;
+}
+.copyright .logo-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.copyright .logo-col p {
+  font-size: 10px;
+  line-height: 1.2em;
+}
+.copyright .logo-col a {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 960px) {
+  .copyright .text-col p {
+    text-align: center;
+    padding-inline: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #ACACAC;
+  }
+}
+@media screen and (min-width: 961px) {
+  .copyright .logo-col {
+    justify-content: flex-end;
+  }
+}
+
+/*# sourceMappingURL=siteFooter.css.map */

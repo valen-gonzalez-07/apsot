@@ -1,0 +1,124 @@
+.home-about {
+  position: relative;
+  padding-block: 35px;
+}
+.home-about::before {
+  content: "";
+  width: 189px;
+  height: 172px;
+  background: no-repeat url("../../../public/img/layout/home/micelanea.svg") -55px 0;
+  background-size: contain;
+  position: absolute;
+  top: 270px;
+  left: 0;
+}
+.home-about .row {
+  position: relative;
+}
+.home-about .col-title h3 {
+  color: #E20178;
+  margin: 0 0 12px;
+}
+.home-about .col-title h2 {
+  color: #005096;
+  margin: 0 0 30px;
+}
+.home-about .col-image .img-box img {
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px rgba(31, 8, 70, 0.0784313725);
+}
+.home-about .col-cards .card {
+  position: relative;
+  background: #FFFFFF;
+  color: #6E6E6E;
+  padding: 20px;
+  border-radius: 17px;
+  box-shadow: 0px 5px 18px rgba(31, 8, 70, 0.0784313725);
+}
+.home-about .col-cards .card h3 {
+  font-size: 19px;
+  line-height: 1.31em;
+  color: #005096;
+  margin: 0 0 32px;
+}
+.home-about .col-cards .card .image-box {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.home-about .col-cards .card .image-box img {
+  object-fit: contain;
+  object-position: left top;
+}
+.home-about .col-cards .card:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.home-about .col-cards .bttn {
+  margin: 30px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+  .home-about .col-title {
+    text-align: center;
+    padding-inline: 45px;
+  }
+  .home-about .col-image .img-box {
+    width: 270px;
+    height: auto;
+    margin-inline: auto;
+  }
+  .home-about .col-cards {
+    margin-top: 30px;
+  }
+  .home-about .col-cards .card h3 {
+    padding-top: 19px;
+    padding-left: 82px;
+  }
+}
+@media screen and (min-width: 961px) {
+  .home-about {
+    padding-block: 60px 136px;
+  }
+  .home-about::before {
+    top: 320px;
+    width: 310px;
+    height: 278px;
+    background-position-x: -120px;
+  }
+  .home-about :is(.col-cards, .col-title) {
+    padding-left: calc(40% + 40px);
+  }
+  .home-about .col-title h3 {
+    margin: 0 0 16px;
+  }
+  .home-about .col-title h2 {
+    margin: 0 0 35px;
+  }
+  .home-about .col-cards .card {
+    padding: 25px 25px 25px 125px;
+  }
+  .home-about .col-cards .card .image-box {
+    width: 70px;
+    height: 70px;
+  }
+  .home-about .col-cards .card h3 {
+    margin: 0 0 15px;
+  }
+  .home-about .col-cards .bttn {
+    margin: 40px 0 0;
+  }
+  .home-about .col-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+  }
+  .home-about .col-image .image-box {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=homeAbout.css.map */

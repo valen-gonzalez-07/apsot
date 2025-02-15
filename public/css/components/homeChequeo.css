@@ -1,0 +1,99 @@
+.home-chequeo {
+  position: relative;
+  padding-block: 30px 120px;
+  background: #F2F2F2;
+}
+.home-chequeo::before {
+  content: "";
+  width: 144px;
+  height: 132px;
+  background: no-repeat url("../../../public/img/layout/home/micelanea.svg") -45px 0;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: 85px;
+}
+.home-chequeo .images-col {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+  margin-top: 30px;
+}
+.home-chequeo .images-col .img-box:nth-child(odd) {
+  flex: 0 1 calc(57% - 4px);
+}
+.home-chequeo .images-col .img-box:nth-child(even) {
+  flex: 0 1 calc(43% - 4px);
+}
+.home-chequeo .images-col .img-box img {
+  border-radius: 20px;
+  box-shadow: 0px 5px 25px rgba(31, 8, 70, 0.0784313725);
+  width: 100%;
+  height: auto;
+}
+.home-chequeo .text-col h3 {
+  color: #E20178;
+  margin: 0 0 12px;
+}
+.home-chequeo .text-col h2 {
+  color: #005096;
+  margin: 0 0 25px;
+}
+.home-chequeo .text-col p {
+  color: #6E6E6E;
+}
+.home-chequeo .text-col p:not(:last-of-type) {
+  margin: 0 0 25px;
+}
+.home-chequeo .text-col .bttn {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-width: 961px) {
+  .home-chequeo {
+    padding-block: 80px 70px;
+  }
+  .home-chequeo::before {
+    width: 304px;
+    height: 278px;
+    bottom: 20px;
+    background-position-x: -80px;
+  }
+  .home-chequeo .images-col {
+    order: -1;
+    gap: 16px;
+    margin-top: 0;
+    padding-right: 20px;
+  }
+  .home-chequeo .images-col .img-box:nth-child(odd) {
+    flex: 0 1 calc(57% - 8px);
+  }
+  .home-chequeo .images-col .img-box:nth-child(even) {
+    flex: 0 1 calc(41% - 8px);
+  }
+  .home-chequeo .text-col {
+    padding-top: 30px;
+    padding-left: 80px;
+  }
+  .home-chequeo .text-col h3 {
+    margin: 0 0 16px;
+  }
+  .home-chequeo .text-col h2 {
+    margin: 0 0 33px;
+  }
+  .home-chequeo .text-col p:not(:last-of-type) {
+    margin: 0 0 33px;
+  }
+  .home-chequeo .text-col .bttn {
+    position: static;
+    margin: 40px 0 0;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=homeChequeo.css.map */

@@ -1,0 +1,61 @@
+.gestion-tramites {
+  color: #6E6E6E;
+}
+.gestion-tramites .title-col h2 {
+  color: #005096;
+  margin: 0 0 22px;
+  text-align: center;
+}
+.gestion-tramites .title-col p {
+  line-height: 1.21em;
+  max-width: 247px;
+}
+.gestion-tramites .content-box {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  width: 835px;
+  padding: 21px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.gestion-tramites .content-box .title-box {
+  font-size: 21px;
+  font-weight: 600;
+  color: #005096;
+}
+.gestion-tramites .content-box .text-phone {
+  color: #E20178;
+  font-weight: 600;
+}
+.gestion-tramites .content-box .icon-download {
+  margin-right: 10px;
+}
+.gestion-tramites .content-box .items-info {
+  list-style: none;
+}
+.gestion-tramites .content-box .items-info .icon-check {
+  color: #E20178;
+  margin-right: 10px;
+}
+.gestion-tramites .content-box .line-text {
+  height: 0.5px;
+  color: #6E6E6E;
+  width: 100%;
+}
+.gestion-tramites .content-box .text-aclaration {
+  font-size: 14px !important;
+  font-style: italic;
+}
+.gestion-tramites .content-box .text-aclaration .highlighted {
+  font-weight: 500;
+}
+.gestion-tramites .content-box .text-aclaration .small-text p {
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=gestiontramites.css.map */

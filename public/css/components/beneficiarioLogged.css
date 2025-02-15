@@ -1,0 +1,42 @@
+.site-nav + .beneficiario-logged {
+  margin-top: 53px;
+}
+
+@media screen and (min-width: 961px) {
+  .site-nav + .beneficiario-logged {
+    margin-top: 37px;
+  }
+}
+.beneficiario-logged .beneficiario-servicios-destacados .cards-box .card.disabled {
+  pointer-events: none;
+}
+.beneficiario-logged .beneficiario-servicios-destacados .cards-box .card.disabled h3 {
+  color: #BBB9B9;
+}
+.beneficiario-logged .beneficiario-servicios-destacados .cards-box .card.disabled .bttn.pink {
+  background: #BBB9B9;
+  border-color: #BBB9B9;
+}
+
+.beneficiario-logged .beneficiario-servicios .links-box .link.disabled {
+  pointer-events: none;
+  color: #BBB9B9;
+}
+.beneficiario-logged .beneficiario-servicios .links-box .link.disabled i {
+  color: #BBB9B9;
+}
+
+@media screen and (min-width: 961px) {
+  .beneficiario-logged .beneficiario-servicios .links-box {
+    gap: 30px;
+  }
+}
+.beneficiario-logged .beneficiario-apps .cards-box .card.disabled {
+  pointer-events: none;
+}
+.beneficiario-logged .beneficiario-apps .cards-box .card.disabled .bttn.pink {
+  background: #BBB9B9;
+  border-color: #BBB9B9;
+}
+
+/*# sourceMappingURL=beneficiarioLogged.css.map */

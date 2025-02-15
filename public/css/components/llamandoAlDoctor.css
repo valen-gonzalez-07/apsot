@@ -1,0 +1,57 @@
+.llamando-al-doctor {
+  color: #6E6E6E;
+  background: #FBFBFB;
+  padding-bottom: 40px;
+}
+.llamando-al-doctor .title-col h2 {
+  color: #005096;
+  margin: 0 0 22px;
+  padding: 0px !important;
+}
+.llamando-al-doctor .title-col p {
+  line-height: 1.21em;
+}
+.llamando-al-doctor .llamando-intro p {
+  color: #008FC5;
+  font-weight: 600;
+  font-size: 18px;
+  width: 705px;
+  margin-bottom: 40px;
+}
+.llamando-al-doctor .content-box {
+  background: #FFFFFF;
+  box-shadow: 0px 5px 18px 0px rgba(31, 8, 70, 0.1);
+  border-radius: 15px;
+  margin-bottom: 60px;
+  display: flex;
+  width: 835px;
+  padding: 21px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.llamando-al-doctor .content-box .title-box {
+  color: #E20178;
+  text-align: center;
+}
+.llamando-al-doctor .content-box .line-text {
+  height: 0.5px;
+  color: #6E6E6E;
+  width: 100%;
+  margin: 0px;
+}
+.llamando-al-doctor .content-box .text-highlight {
+  font-weight: 600;
+}
+.llamando-al-doctor .content-box .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.llamando-al-doctor .content-box .buttons-container .bttn {
+  margin: 20px;
+}
+
+/*# sourceMappingURL=llamandoAlDoctor.css.map */
